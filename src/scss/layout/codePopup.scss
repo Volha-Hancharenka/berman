@@ -28,13 +28,6 @@
     @include media(425) {
       padding: rem(72) rem(21) rem(36);
     }
-    &._is-open {
-      opacity: 1;
-      visibility: visible;
-      .code-popup__body {
-        top: 0;
-      }
-    }
   }
 
   &__close {
@@ -49,7 +42,7 @@
     display: flex;
     flex-direction: column;
     row-gap: rem(40);
-    padding: rem(32) rem(72);
+    padding: rem(15) ;
     background-color: rgba(111, 143, 180, 36%);
     backdrop-filter: blur(rem(4));
     border-radius: rem(36);

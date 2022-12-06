@@ -1,13 +1,3 @@
-.page {
-  &__library {
-  }
-
-  &__audio-accord {
-  }
-
-  &__video-accord {
-  }
-}
 .library {
   padding-top: 120px;
 
@@ -64,25 +54,20 @@
   }
   &__item {
     position: relative;
-    border-radius: 50px;
+    border-radius: 10px;
     border: 1px solid #fff;
     background: rgba(111, 143, 180, 0.361);
     &:not(:last-child) {
       margin-bottom: 10px;
     }
-    &.open {
-      .accordion__header {
-        min-height: 30px;
-      }
-    }
   }
 
   &__header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 5px 25px;
     min-height: 50px;
-    align-items: center;
-    justify-content: space-between;
     cursor: pointer;
     transition: all 300ms ease-in-out;
     @include media(400) {
@@ -102,8 +87,9 @@
     }
   }
   &__icon {
-    display: block;
     flex: 0 0 20px;
+    display: flex;
+    align-items: center;
     height: 20px;
     & .icon-plus,
     & .icon-minus {
@@ -130,7 +116,6 @@
   }
 
   &__content-text {
-   
     padding: 0 25px 20px;
     font-size: 16px;
     line-height: 130%;
@@ -141,7 +126,6 @@
     }
   }
   &__audio {
-    
     max-width: 300px;
     padding: 0 25px 20px;
     @include media(400) {
@@ -150,7 +134,7 @@
   }
   &__btn {
     position: absolute;
-     bottom:20px;
+    bottom: 20px;
     left: 50%;
     transform: translate(-50%);
     width: 100%;
@@ -158,6 +142,4 @@
     height: 40px;
     background-color: transparent;
   }
-}
-.hide {
 }

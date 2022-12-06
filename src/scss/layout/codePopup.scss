@@ -21,12 +21,20 @@
     background-color: linear-gradient(180deg, #21363d 0%, #3f5e7d 100%), linear-gradient(0deg, #ffffff, #ffffff);
     overflow: hidden;
     transition: top 220ms ease-in-out;
-    box-shadow: 0 0 rem(4) rgba(111, 143, 180, 36%), 0 0 rem(8) rgba(111, 143, 180, 36%),
-      0 0 rem(30) rgba(111, 143, 180, 36%), 0 0 rem(60) rgba(111, 143, 180, 36%);
+    box-shadow: 0 0 rem(4) rgba(111, 143, 180, 36%), 
+      0 0 rem(8) rgba(111, 143, 180, 36%),
+      0 0 rem(30) rgba(111, 143, 180, 36%), 
+      0 0 rem(60) rgba(111, 143, 180, 36%);
     @include media(425) {
       padding: rem(72) rem(21) rem(36);
     }
-   
+    &._is-open {
+      opacity: 1;
+      visibility: visible;
+      .code-popup__body {
+        top: 0;
+      }
+    }
   }
 
   &__close {

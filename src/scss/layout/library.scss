@@ -124,7 +124,7 @@
   }
 
   &__content {
-    //height: 0;
+    height: 0;
     overflow: hidden;
     transition: all 200ms linear;
   }
@@ -134,7 +134,7 @@
     padding: 0 25px 20px;
     font-size: 16px;
     line-height: 130%;
-    color: #fff;
+    color: #000;
     font-weight: 300;
     @include media(400) {
       padding: 0 20px 20px;

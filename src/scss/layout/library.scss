@@ -94,6 +94,9 @@
     @include media(400) {
       padding: 5px 20px;
     }
+    @include media(350) {
+      padding-left: 10px;
+    }
   }
   &__text-title {
     font-weight: 300;
@@ -147,6 +150,9 @@
     @include media(400) {
       padding: 10px 20px 20px;
     }
+    @include media(350) {
+      padding: 10px 20px 20px 10px;
+    }
   }
  
   &__audio {
@@ -155,6 +161,9 @@
     padding: 0 25px 20px;
     @include media(400) {
       padding: 0px 60px 20px 20px;
+    }
+    @include media(350) {
+      padding: 0px 80px 20px 10px;
     }
    
   }
@@ -169,6 +178,7 @@
     background-color: transparent;
   }
   &__icon-lock {
+    position: absolute;
     width: 15px;
     height: 15px;
     
@@ -194,6 +204,10 @@
         bottom:14%;
         right :5%;
       }
+      @include media(350) {
+        bottom:13%;
+        right :5%;
+      }
     }
     &_third {
       bottom:15%;
@@ -202,12 +216,20 @@
         bottom:13%;
         right :5%;
       }
+      @include media(350) {
+        bottom:12%;
+        right :5%;
+      }
     }
     &_four {
       bottom:15%;
       right :38%;
       @include media(767) {
         bottom:13%;
+        right :5%;
+      }
+      @include media(350) {
+        bottom:12%;
         right :5%;
       }
     }

@@ -1,0 +1,242 @@
+.page {
+  &__kind {
+  }
+}
+.kind {
+  background: url(./../images/meditation/kind/bg-img.png) no-repeat 0 0 / cover;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 54, 61, 0.659);
+  }
+
+  &__container {
+    //max-width: 900px;
+    padding-top: rem(60);
+    padding-bottom: rem(100);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+    @include media(768) {
+      gap: rem(40);
+    }
+    @include media(600) {
+      padding-top: rem(30);
+      gap: rem(20);
+    }
+    @include adaptiveClamp(" padding-bottom", 100, 30, 768, 425, 1);
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: rem(50);
+    @include media(1024) {
+      margin-bottom: rem(70);
+    }
+    @include media(768) {
+      margin-bottom: rem(30);
+    }
+  }
+
+  &__row {
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: rem(100);
+    @include media(768) {
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: auto;
+    }
+    &_right {
+      @include media(768) {
+        grid-template-columns: 1fr 3fr;
+      }
+    }
+  }
+
+  &__item {
+    border: 1px solid #ffffff;
+    padding: 25px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    @include media(768) {
+      padding: 15px;
+    }
+    @include media(500) {
+      padding: 5px;
+    }
+    &_right {
+      grid-column: 3/4;
+      @include media(768) {
+        grid-column: 2/3;
+      }
+    }
+  }
+
+  &__text {
+    justify-content: center;
+    font-size: rem(18);
+    line-height: rem(24);
+    font-weight: 300;
+    @include adaptiveClamp("font-size", 18, 16, 767, 425, 1);
+    @include adaptiveClamp("line-height", 24, 20, 767, 425, 1);
+  }
+
+  &__figure {
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    @include media(500) {
+      display: none;
+    }
+    @include media(768) {
+      justify-self: end;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 120%;
+      width: 150%;
+      height: rem(1);
+      background-color: #fff;
+      padding-left: rem(30);
+      @include media(1000) {
+        width: 80%;
+      }
+      @include media(600) {
+        width: 40%;
+      }
+    }
+    &_right {
+      grid-column: 2/3;
+      position: relative;
+      @include media(768) {
+        grid-column: 1/2;
+        justify-self: start;
+      }
+      @include media(500) {
+        display: none;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 120%;
+        width: 150%;
+        height: rem(1);
+        background-color: #fff;
+        padding-left: rem(30);
+        @include media(1000) {
+          width: 80%;
+        }
+        @include media(600) {
+          width: 40%;
+        }
+      }
+    }
+    &_first {
+      & svg {
+        rect {
+          &:first-child {
+            fill: rgba(95, 4, 95, 0.4);
+          }
+        }
+      }
+    }
+    &_second {
+      & svg {
+        rect {
+          &:first-child {
+            fill: rgba(0, 0, 255, 0.4);
+          }
+        }
+      }
+    }
+    &_third {
+      & svg {
+        rect {
+          &:first-child {
+            fill: rgba(80, 80, 187, 0.6);
+          }
+        }
+      }
+    }
+    &_four {
+      & svg {
+        rect {
+          &:first-child {
+            fill: rgba(0, 128, 0, 0.5);
+          }
+        }
+      }
+    }
+    &_five {
+      & svg {
+        rect {
+          &:first-child {
+            fill: rgba(234, 230, 10, 0.7);
+          }
+        }
+      }
+    }
+    &_six {
+      & svg {
+        rect {
+          &:first-child {
+            fill: rgba(255, 165, 0, 0.7);
+          }
+        }
+      }
+    }
+    &_seven {
+      & svg {
+        rect {
+          &:first-child {
+            fill: rgba(255, 0, 0, 0.4);
+          }
+        }
+      }
+    }
+  }
+
+  &__price {
+    font-size: rem(18);
+    line-height: rem(24);
+    font-weight: 300;
+    margin-top: rem(60);
+    margin-bottom: rem(15);
+    text-align: center;
+    @include media(768) {
+      margin-bottom: -15px;
+      margin-top: rem(25);
+    }
+    @include media(767) {
+      margin-bottom: 5px;
+      margin-top: rem(25);
+    }
+  }
+  &__btn {
+    margin: 0 auto;
+    @include media(767) {
+      padding-left: rem(5);
+      padding-right: rem(5);
+      text-align: center;
+      line-height: rem(20);
+    }
+  }
+}

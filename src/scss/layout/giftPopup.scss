@@ -1,0 +1,81 @@
+.option-gift-popup {
+  background-color: transparent;
+ 
+  
+  &._is-open {
+    opacity: 1;
+    visibility: visible;
+    .option__body-gift {
+      top: 0;
+    }
+  }
+
+  &__body {
+    width: 1000px;
+    padding: 50px 30px 10px;
+    margin: 0 auto;
+    position: relative;
+    //max-width: rem(1200);
+  top: rem(10);
+  
+    background-image: url("./../images/modal/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: rem(15);
+    overflow: hidden;
+    transition: top 220ms ease-in-out;
+    box-shadow: 0 0 rem(4) rgba(111, 143, 180, 36%), 0 0 rem(8) rgba(111, 143, 180, 36%),
+      0 0 rem(30) rgba(111, 143, 180, 36%), 0 0 rem(60) rgba(111, 143, 180, 36%);
+   
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(33, 54, 61, 50%);
+    }
+    @include media(1030) {
+     width: 100%;
+    }
+    @include media(768) {
+      padding: 50px 10px 10px;
+    }
+    @include media(767) {
+     max-height: 700px;
+     overflow-y: auto;
+     padding: 50px 30px 10px;
+    }
+     @include media(425) {
+      padding: 50px 15px 10px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 0.5%;
+    right: 2%;
+   
+  }
+}
+.option__gift-popup {
+  //margin-top: 200px;
+  padding-bottom: rem(40);
+  align-self: center;
+ position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(rem(200), rem(280)));
+  gap: rem(40);
+  row-gap: rem(60);
+  @include media(1020) {
+    gap: rem(20);
+    grid-template-columns: repeat(3, minmax(rem(220), rem(280)));
+  }
+  @include media(767) {
+   
+    grid-template-columns: 1fr;
+  }
+  
+}
+

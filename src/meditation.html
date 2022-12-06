@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Медитации | Bermancoach'
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html', {})
+    <main class="page">
+      <div data-observ></div>
+      <section class="page__meditation meditation">
+        <div class="meditation__container">
+          <h1 class="meditation__big-title title">Персональные медитации</h1>
+          <h2 class="meditation__description title">Наше подсознание влияет на все наши состояния и ситуации.
+            Взаимодействуя с подсознанием, мы можем влиять на наши жизненные ситуации и реализовывать свои желания легко
+            и радостно!
+          </h2>
+          <div class="meditation__content content">
+            <div class="meditation__video">
+              <video muted preload="auto" controls class="meditation__item">
+                <source src="./files/video/first-video.webm" type="video/webm" alt="Видео о медитации">
+                <source src="./files/video/first-video.mp4" type="video/mp4" alt="Видео о медитации">
+              </video>
+            </div>
+            <div class="meditation__text text">
+              <div class="meditation__articles articles">
+                <p class="meditation__article-p article-p">
+                  Примите свой уникальный инструмент, который поможет вам наполнятся энергией и решать задачи легко и с
+                  удовольствием.
+                </p>
+                <p class="meditation__article-p article-p">Выйдите из подавленных состояний, потерянности,
+                  неуверенности, депрессии.
+                </p>
+                <p class="meditation__article-p article-p">
+                  Войдите в жизнь, наполненную смыслом, счастьем и изобилием.
+                </p>
+                <p class="meditation__article-p article-p">
+                  Раскройте свой уникальный внутренний потенциал для новой жизни.
+                </p>
+              </div>
+
+
+              <button class="meditation__btn btn button-main" data-type="sendForm"><span
+                  class="button-main__text">Записаться на
+                  консультацию</span></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="pairs__stars-left stars-left">
+          <img src="./images/about/stars-left.png" alt="Фоновые звезды">
+        </div>
+        <div class="pairs__stars-right stars-right">
+          <img src="./images/about/stars-right.png" alt="Фоновые звезды">
+        </div>
+      </section>
+      <section class="page__about-m about-m">
+        <div class="about-m__container">
+          <h2 class="about-m__title title">
+            Что даст эта медитация?
+          </h2>
+          <div class="about-m__text about-m__text_first ">
+            <ul class="about-m__list">
+              <li class="about-m__item">
+                <span class="about-m__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 20C10.4141 20 10.6901 19.724 10.6901 19.3099C10.6901 14.5521 14.5521 10.6901 19.3099 10.6901C19.724 10.6901 20 10.4141 20 10C20 9.58594 19.724 9.30989 19.3099 9.30989C14.5521 9.30989 10.6901 5.44792 10.6901 0.690104C10.6901 0.276042 10.4141 0 10 0C9.58594 0 9.3099 0.276042 9.3099 0.690104C9.3099 5.44792 5.44792 9.30989 0.690105 9.30989C0.276043 9.30989 0 9.58594 0 10C0 10.4141 0.276043 10.6901 0.690105 10.6901C5.44792 10.6901 9.3099 14.5521 9.3099 19.3099C9.3099 19.6562 9.65495 20 10 20ZM4.34505 10.0026C6.89583 8.96875 8.96484 6.89974 9.9987 4.34896C11.0326 6.89974 13.1016 8.96875 15.6523 10.0026C13.1016 11.0365 11.0326 13.1055 9.9987 15.6562C9.03385 13.1055 6.96484 11.0365 4.34505 10.0026Z"
+                      fill="white" />
+                  </svg>
+                </span>
+                Внутренний стержень как инструмент, созданный в соответствии с вашим состоянием и ситуацией
+              </li>
+              <li class="about-m__item">
+                <span class="about-m__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 20C10.4141 20 10.6901 19.724 10.6901 19.3099C10.6901 14.5521 14.5521 10.6901 19.3099 10.6901C19.724 10.6901 20 10.4141 20 10C20 9.58594 19.724 9.30989 19.3099 9.30989C14.5521 9.30989 10.6901 5.44792 10.6901 0.690104C10.6901 0.276042 10.4141 0 10 0C9.58594 0 9.3099 0.276042 9.3099 0.690104C9.3099 5.44792 5.44792 9.30989 0.690105 9.30989C0.276043 9.30989 0 9.58594 0 10C0 10.4141 0.276043 10.6901 0.690105 10.6901C5.44792 10.6901 9.3099 14.5521 9.3099 19.3099C9.3099 19.6562 9.65495 20 10 20ZM4.34505 10.0026C6.89583 8.96875 8.96484 6.89974 9.9987 4.34896C11.0326 6.89974 13.1016 8.96875 15.6523 10.0026C13.1016 11.0365 11.0326 13.1055 9.9987 15.6562C9.03385 13.1055 6.96484 11.0365 4.34505 10.0026Z"
+                      fill="white" />
+                  </svg>
+                </span>
+                Быстрый и всегда доступный способ справляться с беспокоящими ситуациями и состояниями
+              </li>
+              <li class="about-m__item">
+                <span class="about-m__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 20C10.4141 20 10.6901 19.724 10.6901 19.3099C10.6901 14.5521 14.5521 10.6901 19.3099 10.6901C19.724 10.6901 20 10.4141 20 10C20 9.58594 19.724 9.30989 19.3099 9.30989C14.5521 9.30989 10.6901 5.44792 10.6901 0.690104C10.6901 0.276042 10.4141 0 10 0C9.58594 0 9.3099 0.276042 9.3099 0.690104C9.3099 5.44792 5.44792 9.30989 0.690105 9.30989C0.276043 9.30989 0 9.58594 0 10C0 10.4141 0.276043 10.6901 0.690105 10.6901C5.44792 10.6901 9.3099 14.5521 9.3099 19.3099C9.3099 19.6562 9.65495 20 10 20ZM4.34505 10.0026C6.89583 8.96875 8.96484 6.89974 9.9987 4.34896C11.0326 6.89974 13.1016 8.96875 15.6523 10.0026C13.1016 11.0365 11.0326 13.1055 9.9987 15.6562C9.03385 13.1055 6.96484 11.0365 4.34505 10.0026Z"
+                      fill="white" />
+                  </svg>
+                </span>
+                Автономный инструмент, избавляющий от потребности постоянных посещений специалистов, коучей, психологов
+              </li>
+              <li class="about-m__item">
+                <span class="about-m__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 20C10.4141 20 10.6901 19.724 10.6901 19.3099C10.6901 14.5521 14.5521 10.6901 19.3099 10.6901C19.724 10.6901 20 10.4141 20 10C20 9.58594 19.724 9.30989 19.3099 9.30989C14.5521 9.30989 10.6901 5.44792 10.6901 0.690104C10.6901 0.276042 10.4141 0 10 0C9.58594 0 9.3099 0.276042 9.3099 0.690104C9.3099 5.44792 5.44792 9.30989 0.690105 9.30989C0.276043 9.30989 0 9.58594 0 10C0 10.4141 0.276043 10.6901 0.690105 10.6901C5.44792 10.6901 9.3099 14.5521 9.3099 19.3099C9.3099 19.6562 9.65495 20 10 20ZM4.34505 10.0026C6.89583 8.96875 8.96484 6.89974 9.9987 4.34896C11.0326 6.89974 13.1016 8.96875 15.6523 10.0026C13.1016 11.0365 11.0326 13.1055 9.9987 15.6562C9.03385 13.1055 6.96484 11.0365 4.34505 10.0026Z"
+                      fill="white" />
+                  </svg>
+                </span>
+                Это ключ к вашей внутренней силе, к созданию связи вашего внутреннего и внешнего мира
+              </li>
+            </ul>
+
+          </div>
+          <h2 class="about-m__title about-m__title_second title">
+            Почему это работает?
+          </h2>
+          <div class="about-m__text about-m__text_second">
+            <ul class="about-m__list">
+              <li class="about-m__item">
+                <span class="about-m__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 20C10.4141 20 10.6901 19.724 10.6901 19.3099C10.6901 14.5521 14.5521 10.6901 19.3099 10.6901C19.724 10.6901 20 10.4141 20 10C20 9.58594 19.724 9.30989 19.3099 9.30989C14.5521 9.30989 10.6901 5.44792 10.6901 0.690104C10.6901 0.276042 10.4141 0 10 0C9.58594 0 9.3099 0.276042 9.3099 0.690104C9.3099 5.44792 5.44792 9.30989 0.690105 9.30989C0.276043 9.30989 0 9.58594 0 10C0 10.4141 0.276043 10.6901 0.690105 10.6901C5.44792 10.6901 9.3099 14.5521 9.3099 19.3099C9.3099 19.6562 9.65495 20 10 20ZM4.34505 10.0026C6.89583 8.96875 8.96484 6.89974 9.9987 4.34896C11.0326 6.89974 13.1016 8.96875 15.6523 10.0026C13.1016 11.0365 11.0326 13.1055 9.9987 15.6562C9.03385 13.1055 6.96484 11.0365 4.34505 10.0026Z"
+                      fill="white" />
+                  </svg>
+                </span>
+                Сознание - 3 сессии на ментальном уровне для выявления страхов, блоков. Формирование сценария для их
+                проработки
+
+              </li>
+              <li class="about-m__item">
+                <span class="about-m__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 20C10.4141 20 10.6901 19.724 10.6901 19.3099C10.6901 14.5521 14.5521 10.6901 19.3099 10.6901C19.724 10.6901 20 10.4141 20 10C20 9.58594 19.724 9.30989 19.3099 9.30989C14.5521 9.30989 10.6901 5.44792 10.6901 0.690104C10.6901 0.276042 10.4141 0 10 0C9.58594 0 9.3099 0.276042 9.3099 0.690104C9.3099 5.44792 5.44792 9.30989 0.690105 9.30989C0.276043 9.30989 0 9.58594 0 10C0 10.4141 0.276043 10.6901 0.690105 10.6901C5.44792 10.6901 9.3099 14.5521 9.3099 19.3099C9.3099 19.6562 9.65495 20 10 20ZM4.34505 10.0026C6.89583 8.96875 8.96484 6.89974 9.9987 4.34896C11.0326 6.89974 13.1016 8.96875 15.6523 10.0026C13.1016 11.0365 11.0326 13.1055 9.9987 15.6562C9.03385 13.1055 6.96484 11.0365 4.34505 10.0026Z"
+                      fill="white" />
+                  </svg>
+                </span>
+                Подсознание - Создание медитации по персональному сценарию, исходя из выявленных ключей к сознанию и
+                подсознанию, а также ресурсных состояний клиента
+              </li>
+              <li class="about-m__item">
+                <span class="about-m__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 20C10.4141 20 10.6901 19.724 10.6901 19.3099C10.6901 14.5521 14.5521 10.6901 19.3099 10.6901C19.724 10.6901 20 10.4141 20 10C20 9.58594 19.724 9.30989 19.3099 9.30989C14.5521 9.30989 10.6901 5.44792 10.6901 0.690104C10.6901 0.276042 10.4141 0 10 0C9.58594 0 9.3099 0.276042 9.3099 0.690104C9.3099 5.44792 5.44792 9.30989 0.690105 9.30989C0.276043 9.30989 0 9.58594 0 10C0 10.4141 0.276043 10.6901 0.690105 10.6901C5.44792 10.6901 9.3099 14.5521 9.3099 19.3099C9.3099 19.6562 9.65495 20 10 20ZM4.34505 10.0026C6.89583 8.96875 8.96484 6.89974 9.9987 4.34896C11.0326 6.89974 13.1016 8.96875 15.6523 10.0026C13.1016 11.0365 11.0326 13.1055 9.9987 15.6562C9.03385 13.1055 6.96484 11.0365 4.34505 10.0026Z"
+                      fill="white" />
+                  </svg>
+                </span>
+                Поддержка - Использование музыкального сопровождения, исходя из ваших личных предпочтений, или создание
+                уникального музыкального сопровождения только для вас
+              </li>
+            </ul>
+
+          </div>
+          <div class="about-m__buttons">
+            <a href="https://checkout.bepaid.by/v2/confirm_order/prd_cee7729aa2cb65c2/14088" target="_blank"
+              class="about-m__btn btn button-main"><span class="button-main__text">Приобрести медитацию</span></a>
+            <button class="about-m__btn btn button-main" data-type="sendForm">
+              <img src="./images/personal/little-ribbon.png" class="about-m__little-ribbon">
+              <span class="button-main__text">Записаться на
+                консультацию</span></button>
+          </div>
+        </div>
+      </section>
+      <section class="page__kind kind">
+        <div class="kind__container">
+          <h2 class="kind__title title">
+            Виды медитаций
+          </h2>
+          <div class="kind__row">
+            <div class="kind__item">
+              <p class="kind__text">Защита от воздействий – медитация, создающая защиту от воздействий на вас
+                нежелательных внешних энергий или третьих лиц
+              </p>
+            </div>
+            <span class="kind__figure kind__figure_first">
+              <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7.07129" y="36" width="40" height="40" transform="rotate(-45 7.07129 36)" fill="#D9D9D9" />
+                <rect x="0.707107" y="36" width="49" height="49" transform="rotate(-45 0.707107 36)" stroke="white" />
+              </svg>
+            </span>
+          </div>
+          <div class="kind__row kind__row_right ">
+            <span class="kind__figure kind__figure_right kind__figure_second">
+              <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7.07129" y="36" width="40" height="40" transform="rotate(-45 7.07129 36)" fill="#D9D9D9" />
+                <rect x="0.707107" y="36" width="49" height="49" transform="rotate(-45 0.707107 36)" stroke="white" />
+              </svg>
+            </span>
+            <div class="kind__item kind__item_right">
+              <p class="kind__text">Намерение – медитация, формирующая намерение и внутренний стержень
+              </p>
+            </div>
+
+          </div>
+          <div class="kind__row">
+            <div class="kind__item">
+              <p class="kind__text">Мотивация – медитация, наполняющая энергией и уверенностью для достижения
+                поставленной вами цели
+              </p>
+            </div>
+            <span class="kind__figure kind__figure_third">
+              <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7.07129" y="36" width="40" height="40" transform="rotate(-45 7.07129 36)" fill="#D9D9D9" />
+                <rect x="0.707107" y="36" width="49" height="49" transform="rotate(-45 0.707107 36)" stroke="white" />
+              </svg>
+            </span>
+          </div>
+          <div class="kind__row kind__row_right">
+            <span class="kind__figure kind__figure_right kind__figure_four">
+              <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7.07129" y="36" width="40" height="40" transform="rotate(-45 7.07129 36)" fill="#D9D9D9" />
+                <rect x="0.707107" y="36" width="49" height="49" transform="rotate(-45 0.707107 36)" stroke="white" />
+              </svg>
+            </span>
+            <div class="kind__item kind__item_right">
+              <p class="kind__text">Гармония – медитация для гармонизации и сбалансированного распределения вашей
+                энергии во всех сферах вашей жизни
+              </p>
+            </div>
+
+          </div>
+          <div class="kind__row">
+            <div class="kind__item">
+              <p class="kind__text">Избавление – медитация, избавляющая вас от негативных состояний (состояний, которые
+                по вашему мнению мешают вам и истощают ваш ресурс)
+              </p>
+            </div>
+            <span class="kind__figure kind__figure_five">
+              <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7.07129" y="36" width="40" height="40" transform="rotate(-45 7.07129 36)" fill="#D9D9D9" />
+                <rect x="0.707107" y="36" width="49" height="49" transform="rotate(-45 0.707107 36)" stroke="white" />
+              </svg>
+            </span>
+          </div>
+          <div class="kind__row kind__row_right">
+            <span class="kind__figure kind__figure_right kind__figure_six">
+              <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7.07129" y="36" width="40" height="40" transform="rotate(-45 7.07129 36)" fill="#D9D9D9" />
+                <rect x="0.707107" y="36" width="49" height="49" transform="rotate(-45 0.707107 36)" stroke="white" />
+              </svg>
+            </span>
+            <div class="kind__item kind__item_right">
+              <p class="kind__text">Смелость – медитация, избавляющая вас от страхов или фобий
+              </p>
+            </div>
+
+          </div>
+          <div class="kind__row">
+            <div class="kind__item">
+              <p class="kind__text">Восстановление – медитация, погружающая вас в состояние гармонии через связь с вашим
+                личным источником изобилия для восстановления ресурсного состояния
+              </p>
+            </div>
+            <span class="kind__figure kind__figure_seven">
+              <svg width="71" height="72" viewBox="0 0 71 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7.07129" y="36" width="40" height="40" transform="rotate(-45 7.07129 36)" fill="#D9D9D9" />
+                <rect x="0.707107" y="36" width="49" height="49" transform="rotate(-45 0.707107 36)" stroke="white" />
+              </svg>
+            </span>
+          </div>
+          <span class="kind__price">Стоимость медитации - 250$</span>
+          <a href="https://checkout.bepaid.by/v2/confirm_order/prd_cee7729aa2cb65c2/14088" target="_blank"
+            class="kind__btn btn button-main"><span class="button-main__text">Приобрести персональную
+              медитацию</span></a>
+        </div>
+
+      </section>
+      <section class="page__video video">
+        <div class="video__container">
+          <div class="video__video">
+            <video poster="./files/video/image-one.jpg" preload="auto" controls class="video__item">
+              <source src="./files/video/first-video.webm" type="video/webm" alt="Видео о медитации">
+              <source src="./files/video/first-video.mp4" type="video/mp4" alt="Видео о медитации">
+            </video>
+          </div>
+          <div class="video__video">
+            <video poster="./files/video/image-two.jpg" preload="auto" controls class="video__item">
+              <source src="./files/video/second-video.webm" type="video/webm" alt="Видео о медитации">
+              <source src="./files/video/second-video.mp4" type="video/mp4" alt="Видео о медитации">
+            </video>
+          </div>
+          <div class="video__video">
+            <video poster="./files/video/image-three.jpg" preload="auto" controls class="video__item">
+              <source src="./files/video/third-video.webm" type="video/webm" alt="Видео о медитации">
+              <source src="./files/video/third-video.mp4" type="video/mp4" alt="Видео о медитации">
+            </video>
+          </div>
+        </div>
+        <div class="video__stars-left stars-left">
+          <img src="./images/about/stars-left.png" alt="Фоновые звезды">
+        </div>
+        <div class="video__stars-right stars-right">
+          <img src="./images/about/stars-right.png" alt="Фоновые звезды">
+        </div>
+      </section>
+      <section class="page__test test">
+        <div class="test__container">
+          <h2 class="test__title title">
+            Медитативная совместимость
+          </h2>
+          <div class="test__block">
+            <p class="test__text">Друзья!
+              <br>К сожалению не все из нас изначально подготовлены к решению задач на всех уровнях. Навык задавать себе
+              правильные вопросы, и главное, искренне отвечать на них - главное условие для решения задач и достижения
+              целей. Ваше эго - ваш лучший друг и союзник, но нужно понимать, что оно находится на пути ваших желаний и
+              их реализации. Эго любит стабильность и не всегда готово к переменам и адаптации. Поэтому я предлагаю вам
+              ознакомиться с основными моментами, связанными с медитацией, пройти небольшой тест и получить от меня
+              бесплатную рекомендацию для решения ваших задач и сложившихся ситуаций.
+            </p>
+          </div>
+          <p class="test__description">Получив рекомендацию вы узнаете, насколько эффективны для вас медитации, и какие
+            альтернативные инструменты помогут решить вашу задачу.
+          </p>
+          <ul class="test__list">
+            <li class="test__item">
+              <span class="test__number">1</span>
+              <p class="test__paragraph">Раскройте секреты своего подсознания и взаимодействуйте с ним
+              </p>
+              <p class="test__paragraph">Задание 1 – представьтесь и расскажите о проблеме или задаче, с который хотели
+                бы справиться. Какими способами пытались решить эту задачу?
+              </p>
+            </li>
+            <li class="test__item">
+              <span class="test__number">2</span>
+              <p class="test__paragraph">Осознайте свой опыт прошлого во взаимодействии с вашим сознанием, подсознанием
+              </p>
+              <p class="test__paragraph">Задание 2 – Сделайте список всех воздействующих на вас убеждений и эмоций,
+                связанных с задачей, с который хотели бы справиться.
+              </p>
+            </li>
+            <li class="test__item">
+              <span class="test__number">3</span>
+              <p class="test__paragraph">Осознайте свой опыт прошлого в работе с вашими скрытыми ресурсами, внутренним
+                миром, чужими установками и убеждениями
+              </p>
+              <p class="test__paragraph">Задание 3 – Сделайте список ситуаций, когда задачи, которые вы не могли решить
+                какое-то время, решались сами собой. Что общего у этих ситуаций?
+              </p>
+            </li>
+            <li class="test__item test__item_btn">
+              <button class="test__btn btn button-main" data-toggle="taskSubmissionForm">
+                <span class="button-main__text">Выполнить задание</span>
+              </button>
+            </li>
+          </ul>
+          <div class="test__form-wrapper" data-toggle-element="taskSubmissionForm">
+            <form class="test__action-form">
+              <h4 class="test__action-form-title">
+                Выполните задания и оставьте свои контактные данные
+              </h4>
+              <div class="test__field-control">
+                <input type="text" name="user_name" class="test__input-control _req" placeholder="Ваше имя*">
+              </div>
+              <div class="test__field-control">
+                <textarea name="problems" class="test__textarea-control "
+                  placeholder="Расскажите о своей задаче и способах ее решения в прошлом" type="text"></textarea>
+              </div>
+              <div class="test__field-control">
+                <textarea type="text" name="emotions" class="test__textarea-control "
+                  placeholder="Убеждения и эмоции, связанные с задачей"></textarea>
+              </div>
+              <div class="test__field-control">
+                <textarea type="text" name="cituations" class="test__textarea-control "
+                  placeholder="Когда сложные ситуации решались сами собой, что общего между ними"></textarea>
+              </div>
+              <div class="test__field-control">
+                <input type="tel" name="user_phone" class="test__input-control _req" placeholder="Ваш номер телефона*">
+              </div>
+              <div class="test__field-control">
+                <input type="email" name="user_email" class="test__input-control _req _email" placeholder="E-mail*">
+              </div>
+              <button class="test__submit button-main" type="submit">
+                <span class="button-main__text">Получить рекомендацию</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html', {})
+    @@include('html/modals/sendFormPopup.html', {})
+    @@include('html/modals/contactsPopup.html', {})
+
+  </div>
+  @@include('html/script.html', {})
+</body>
+
+</html>

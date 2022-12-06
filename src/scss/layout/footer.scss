@@ -1,0 +1,123 @@
+.footer {
+  padding-top: rem(24);
+  padding-bottom: rem(24);
+  background-color: #111;
+  background-image: url("./../images/header/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#293336, 80%);
+    backdrop-filter: blur(rem(1));
+  }
+  // .footer__container
+  &__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 5fr 2fr 1fr;
+    gap: rem(12);
+    @include media(768) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include media(580) {
+      grid-template-columns: 1fr;
+      row-gap: rem(24);
+    }
+  }
+  // .footer__list
+  &__list {
+    display: flex;
+    gap: rem(12);
+    // .footer__list_contact
+    &_contact {
+      flex-direction: column;
+      //margin-left: auto;
+      @include media(580) {
+        grid-column: 1;
+        grid-row: 1 / 2;
+      }
+    }
+    // .footer__list_social
+    &_social {
+      margin-left: auto;
+      @include media(580) {
+        grid-column: 1;
+        grid-row: 2 / 3;
+      }
+      @include media(768) {
+        margin-left: 0;
+      }
+    }
+  }
+  // .footer__item
+  &__item {
+  }
+  // .footer__contact-link
+  &__contact-link {
+    font-weight: 200;
+    color: #fff;
+    line-height: prc(19, 16);
+    transition: $standartTrans;
+    &:hover {
+      color: #39a4d6;
+    }
+  }
+  // .footer__social-link
+  &__social-link {
+    width: rem(40);
+    height: rem(40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: rem(10);
+    background-color: rgba(#fff, 5%);
+    transition: $standartTrans;
+    &:hover {
+      background-color: rgba(#fff, 10%);
+    }
+    &:active {
+      background-color: rgba(#fff, 20%);
+    }
+    svg {
+      width: rem(24);
+      height: rem(24);
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  // .footer__copyright
+  &__copyright {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    row-gap: rem(12);
+    @include media(580) {
+      font-size: rem(13);
+      grid-column: 1;
+      grid-row: 3;
+    }
+  }
+  // .footer__copyright-author
+  &__copyright-author {
+    color: #fff;
+  }
+  // .footer__copyright-design
+  &__copyright-design {
+    color: #fff;
+    a {
+      color: #fff;
+      transition: $standartTrans;
+      &:hover {
+        color: #39a4d6;
+      }
+    }
+  }
+}

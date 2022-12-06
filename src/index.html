@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Главная | Bermancouch'
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html', {})
+    <main class="page">
+      <div data-observ></div>
+      <section class="page__about about">
+        <div class="about__container">
+          <div class="about__image-img ">
+            <img src="./images/about/photo.jpg" alt="Александр Берман">
+          </div>
+          <div class="about__text text">
+            <h2 class="about__title title">Приветствую, друзья!</h2>
+            <div class="about__articles articles">
+              <p class="about__article-p article-p">
+                Меня зовут Александр и меня не сразу легко понять, как говорят мне мои клиенты и ученики.
+              </p>
+              <p class="about__article-p article-p">
+                В своей методике я совместил знания из разных сфер, таких как <span>коучинг</span>,
+                <span>эзотерика</span>, <span>каббала</span>,
+                <span>психология</span> и <span>азиатские энергопрактики</span>.
+              </p>
+              <p class="about__article-p article-p">
+                Уже 15 лет оттачиваю навык достижения целей, и более 9 лет занимаюсь различными практиками саморазвития.
+              </p>
+              <p class="about__article-p article-p">
+                Я - сертифицированный коуч ICU с большим количеством часов практики.
+              </p>
+              <p class="about__article-p article-p about__article-p_strong">
+                Я убежден, что коучинг, как основной инструмент для достижения целей, является самым эффективным методом
+                трансформации, позволяющий получить быстрый и качественный для вас результат, благодаря тем знаниям из
+                разных сфер, которые я применяю.
+              </p>
+            </div>
+            <button class="about__btn btn button-main" data-type="sendForm">
+              <span class="button-main__text">
+                Записаться на консультацию
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="about__stars-left stars-left">
+          <img src="./images/about/stars-left.png" alt="Фоновые звезды">
+        </div>
+        <div class="about__stars-right stars-right">
+          <img src="./images/about/stars-right.png" alt="Фоновые звезды">
+        </div>
+      </section>
+      <section class="page__gifts gift">
+        <div class="gift__container">
+          <h2 class="gift__title title">Подарки</h2>
+          <div class="gift__cards">
+            <div class="gift__card">
+              <div class="gift__ribbon-img">
+                <picture>
+                  <source srcset="@img/little-ribbon.webp" type="image/webp">
+                  <img src="@img/little-ribbon.png" alt="Gift">
+                </picture>
+              </div>
+              <div class="gift__content gift__content_one">
+                <div class="gift__text-title">Медитация для восстановления сил
+                  и энергии
+                </div>
+                <ul class="gift__list">
+                  <li class="gift__item">Подпишись на мою страничку в <a
+                      href="https://www.instagram.com/berman_alexander/" target="_blank">Instagram</a>
+                  </li>
+                  <li class="gift__item">Отправь сообщение с кодовым словом "Медитация"</li>
+                  <li class="gift__item">Получи от меня код доступа</li>
+                  <li class="gift__item">Введи его для прослушивания медитации в моей библиотеке медитаций</li>
+                </ul>
+              </div>
+              <a href="https://www.instagram.com/berman_alexander/" title="Переход в инстаграм" target="_blank"
+                class="gift__button button-main"><span class="button-main__text">Принять подарок</span></a>
+            </div>
+            <div class="gift__card">
+              <div class="gift__ribbon-img">
+                <picture>
+                  <source srcset="@img/little-ribbon.webp" type="image/webp">
+                  <img src="@img/little-ribbon.png" alt="Gift">
+                </picture>
+              </div>
+              <div class="gift__content gift__content_two">
+                <div class="gift__text-title">Персональная медитация <br>для пар
+                </div>
+                <ul class="gift__list">
+                  <li class="gift__item">Приобрети один из пакетов "Мой внутренний потенциал" или "Счастливые отношения"
+                  </li>
+                  <li class="gift__item">Получи от меня код доступа</li>
+                  <li class="gift__item">Введи его для прослушивания медитации в моей библиотеке медитаций</li>
+                </ul>
+              </div>
+              <button data-type="giftPopup" title="Перейти к оплате" class="gift__button button-main"><span
+                  class="button-main__text">Принять подарок</span></button>
+            </div>
+            <div class="gift__card">
+              <div class="gift__ribbon-img">
+                <picture>
+                  <source srcset="@img/little-ribbon.webp" type="image/webp">
+                  <img src="@img/little-ribbon.png" alt="Gift">
+                </picture>
+              </div>
+              <div class="gift__content gift__content_three">
+                <div class="gift__text-title">Медитация для реализации целей
+                </div>
+                <ul class="gift__list">
+                  <li class="gift__item">Приобрети персональную медитацию
+                  </li>
+                  <li class="gift__item">Получи от меня код доступа</li>
+                  <li class="gift__item">Введи его для прослушивания медитации в моей библиотеке медитаций
+                  </li>
+                </ul>
+              </div>
+              <a href="./meditation.html" title="Перейти к оплате"
+                class="gift__button button-main"><span class="button-main__text">Принять подарок</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__work work">
+        <div class="work__container">
+          <div class="work__row">
+            <div class="work__content">
+              <h3 class="work__title">Раскрытие личного потенциала
+              </h3>
+              <div class="work__text">
+                <p class="work__description">Важно понимать, что универсального ключа знаний, с помощью которых человек
+                  может максимально реализовать свой потенциал, не существует .
+                </p>
+                <p class="work__description">Ключ к реализации своего потенциала складывается из множества частиц,
+                  знаний из разных сфер, и подбирается индивидуально.</p>
+                <p class="work__description">Каждый человек и его душа уникальны по своей природе и для каждого нужен
+                  свой "золотой" ключ для раскрытия себя и потенциала своей души…
+                </p>
+              </div>
+              <a href="./personal.html" class="work__button button-main"><span class="button-main__text">Узнать
+                  больше</span></a>
+            </div>
+            <div class="work__image-img">
+              <img src="./images/about/work/personal.png" alt="Личные сессии">
+            </div>
+          </div>
+          <div class="work__row">
+            <div class="work__image-img work__image-img_pairs">
+              <img src="./images/about/work/pairs.png" alt="Парные сессии">
+            </div>
+            <div class="work__content">
+              <h3 class="work__title">Раскрытие совместного потенциала
+              </h3>
+              <div class="work__text">
+                <p class="work__description">Реализация себя и своего потенциала возможна через взаимодействие с другими
+                  людьми.
+                </p>
+                <p class="work__description">Самые близкие для нас люди могут быть лучшими партнёрами, а отношения с
+                  партнёром противоположного пола могут быть отличным инструментом для реализации себя и своего
+                  потенциала.</p>
+                <p class="work__description">Основа реализации совместного потенциала исходит из широкого спектра
+                  вариантов взаимодействия, которые могут быть полезны обоим сторонам…
+                </p>
+              </div>
+              <a href="./pairs.html" class="work__button button-main"><span class="button-main__text">Узнать
+                  больше</span></a>
+            </div>
+          </div>
+          <div class="work__row">
+            <div class="work__content work__content_group">
+              <h3 class="work__title">Персональные и групповые медитации
+              </h3>
+              <div class="work__text">
+                <p class="work__description">Медитации - это погружение в состояние, которое позволяет вашему сознанию
+                  взаимодействовать со своим подсознанием.
+                </p>
+                <p class="work__description">В нашей ежедневной жизни мы подвержены воздействию на нас многих факторов,
+                  ситуаций и состояний. Находясь под этим воздействием, мы теряем связь сознания и подсознания, другими
+                  словами - связь с собой и тем, кто мы есть.
+                </p>
+                <p class="work__description">С помощью медитаций можно сохранять связь с собой, своим внутренним миром,
+                  подсознанием, а также избавляться от внешних воздействий и находить нужные вам ответы. Если вы хотите
+                  жить своей жизнью...
+                </p>
+              </div>
+              <a href="./meditation.html" class="work__button button-main"><span class="button-main__text">Узнать
+                  больше</span></a>
+            </div>
+            <div class="work__image-img">
+              <img src="./images/about/work/group.png" alt="Групповые сессии">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__reviews reviews">
+        <div class="reviews__container">
+          <h2 class="reviews__title title">Отзывы</h2>
+          <div class="reviews__cards swiper">
+            <div class="reviews__swiper-wrapper swiper-wrapper"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html', {})
+    @@include('html/modals/sendFormPopup.html', {})
+    @@include('html/modals/giftPopup.html', {})
+    @@include('html/modals/contactsPopup.html', {})
+
+  </div>
+  @@include('html/script.html', {})
+</body>
+
+</html>

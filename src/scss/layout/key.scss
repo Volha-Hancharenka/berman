@@ -1,0 +1,239 @@
+.key {
+  background: url(./../images/personal/key/bg-image.png) no-repeat 0 0 / cover;
+  overflow: hidden;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 36, 36, 40%);
+    backdrop-filter: blur(rem(2));
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: rem(60);
+    @include media(600) {
+      padding-top: rem(30);
+    }
+  }
+
+  &__row {
+  }
+
+  &__content {
+  }
+
+  &__text {
+  }
+
+  &__image {
+  }
+
+  &__title {
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 5%;
+
+  }
+&__arrow {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+  &__item {
+    font-size: rem(18);
+    line-height: rem(25);
+    font-weight: 300;
+    padding-left: 30px;
+    position: relative;
+    @include media(600) {
+      font-size: rem(16);
+    }
+    
+  }
+
+  &__end-block {
+    border: 2px solid #ffffff;
+    padding: rem(15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    max-width: 740px;
+    gap: rem(10);
+    margin-top: rem(100);
+    @include media(600) {
+      margin-top: rem(40);
+    }
+  }
+}
+.row-identical {
+  display: flex;
+  gap: rem(200);
+  align-items: center;
+  justify-content: center;
+  //position: relative;
+  @include adaptiveClamp("gap", 200, 80, 1000, 768, 1);
+  @include media(600) {
+    flex-direction: column;
+    gap: rem(30);
+  }
+}
+.content-identical {
+  border: 2px solid #ffffff;
+  padding: rem(15);
+  display: flex;
+  flex-direction: column;
+  gap: rem(10);
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+  &_first,
+  &_third {
+    @include media(600) {
+      order: 2;
+    }
+  }
+  &_second {
+  }
+}
+.text-identical {
+  font-size: rem(18);
+  line-height: rem(25);
+  font-weight: 300;
+  position: relative;
+  @include media(600) {
+    font-size: rem(16);
+  }
+}
+.img-identical {
+  width: rem(300);
+  height: rem(150);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_first-svg,
+  &_third-svg {
+    @include media(600) {
+      order: 1;
+    }
+  }
+  &_first-svg,
+  &_third-svg,
+  &_second-svg {
+    @include media(600) {
+      width: rem(100);
+      height: rem(100);
+    }
+  }
+  &_first-svg {
+    @include media(600) {
+      img {
+        width: rem(80);
+        height: rem(86);
+      }
+    }
+  }
+  &_second-svg {
+    @include media(600) {
+      img {
+        width: rem(34);
+        height: rem(100);
+      }
+    }
+  }
+  &_third-svg {
+    @include media(600) {
+      img {
+        width: rem(80);
+        height: rem(82);
+      }
+    }
+  }
+}
+.title-identical {
+  font-size: rem(32);
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: rem(80);
+  margin-top: rem(80);
+  position: relative;
+  z-index: 2;
+  @include media(600) {
+    margin-bottom: rem(40);
+    margin-top: rem(40);
+    font-size: rem(30);
+  }
+  &_last {
+    @include adaptiveClamp("font-size", 32, 18, 1000, 425, 1);
+    line-height: 40px;
+    @include media(600) {
+      margin-top: rem(50);
+      line-height: 25px;
+    }
+  }
+}
+.key {
+  &__stars-first {
+  }
+
+  &__stars-second {
+  }
+
+  &__stars-third {
+  }
+}
+.first-stars {
+  display: none;
+}
+
+.second-stars {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  opacity: 0.5;
+  @include media(600) {
+    top: 45%;
+
+    width: rem(140);
+    height: rem(400);
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.third-stars {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.6;
+  @include media(600) {
+    //top: 45%;
+
+    width: rem(140);
+    height: rem(400);
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

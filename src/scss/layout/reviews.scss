@@ -1,0 +1,96 @@
+.reviews {
+  background: url(./../images/about/reviews/bg-img.png) no-repeat 0 0 / cover;
+  overflow: hidden;
+  background-attachment: fixed;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#2a4a67, 40%);
+    backdrop-filter: blur(rem(1));
+  }
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(100);
+    row-gap: rem(100);
+    padding-top: rem(120);
+    @include adaptiveClamp("padding-bottom", 120, 50, 1200, 425, 1);
+    @include media(1000) {
+      row-gap: rem(40);
+      padding-top: rem(40);
+    }
+    @include media(768) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__cards {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(rem(260), 1fr));
+    // gap: rem(30);
+    width: 100%;
+  }
+  // .reviews__swiper-slide
+  &__swiper-slide {
+    flex: 1 0 rem(280);
+    // opacity: 0.85;
+    transition: $standartTrans;
+    user-select: none;
+    cursor: pointer;
+    &.swiper-slide-active {
+      // opacity: 1;
+      .reviews__card {
+        background-color: #6f8fb4;
+      }
+    }
+  }
+  // .reviews__card
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: rem(24);
+    padding: rem(18) rem(25);
+    background-color: #485d75;
+    border-radius: 15px;
+    transition: $standartTrans;
+    border: 2px solid #ffffff;
+  }
+
+  &__name {
+    display: flex;
+    gap: rem(12);
+    align-items: center;
+  }
+
+  &__person {
+    font-size: rem(20);
+    font-weight: 300;
+  }
+
+  &__text {
+    font-size: rem(18);
+    line-height: prc(25, 18);
+    @include lineClamp(5);
+  }
+
+  &__icon {
+    flex: 0 0 rem(24);
+    height: rem(24);
+    & svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.work {
+  background: url(./../images/about/work/bg-image.png) no-repeat 0 0 / cover;
+  overflow: hidden;
+  position: relative;
+  @include media(1100) {
+    background-position: center;
+  }
+  @include media(768) {
+    background-position: start;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 36, 36, 40%);
+    backdrop-filter: blur(rem(2));
+  }
+  
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(100);
+    padding-top: rem(120);
+    @include adaptiveClamp("padding-bottom", 120, 30, 900, 425, 1);
+    @include media(1000) {
+      padding-top: rem(40);
+    }
+    @include media(767) {
+      row-gap: rem(50);
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    @include adaptiveClamp("gap", 120, 50, 1000, 768, 1);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    @include adaptiveClamp("gap", 85, 30, 1100, 900, 1);
+    &_group {
+      max-width: 634px;
+      @include adaptiveClamp("max-width", 634, 440, 1200, 768, 1);
+    }
+  }
+
+  &__title {
+    font-size: rem(32);
+    font-weight: 300;
+    line-height: rem(25);
+    @include adaptiveClamp("font-size", 32, 22, 425, 320, 1);
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    row-gap: rem(20);
+  }
+  &__description {
+    font-weight: 300;
+    line-height: prc(30, 18);
+    @include adaptiveClamp("font-size", 18, 16, 425, 320, 1);
+  }
+
+  &__button {
+    align-self: flex-start;
+  }
+
+  &__image-img {
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 40%;
+    width: 100%;
+    padding-bottom: prc(469, 695);
+    box-shadow: $blockBoxShadow;
+    @include media(767) {
+      display: none;
+    }
+
+    &_pairs {
+      border-top-left-radius: 0;
+      border-top-right-radius: prc(244, 695);
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.pairs {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  @include adaptiveClamp("padding-bottom", 120, 30, 900, 425, 1);
+  @include media(1000) {
+    padding-top: rem(30);
+  }
+  position: relative;
+  &__container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    row-gap: rem(100);
+    @include adaptiveClamp("row-gap", 100, 50, 767, 425, 1);
+  }
+
+  &__title {
+    margin-bottom: rem(48);
+   
+  }
+  &__big-title {
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 1px 1px 6px rgba(#000, 30%);
+    font-size: 36px;
+    letter-spacing: 10px;
+   
+    margin-bottom: rem(20);
+  line-height: 22px;
+    @include media(767) {
+      margin-bottom: 0;
+      letter-spacing: 6px;
+      @include adaptiveClamp("font-size", 36, 22, 767, 425, 1);
+    }
+  }
+  &__image-img {
+    position: relative;
+    width: 100%;
+    padding-bottom: prc(300, 600);
+    overflow: hidden;
+    box-shadow: $blockBoxShadow;
+    @include media(1000) {
+      padding-bottom: 100%;
+    }
+    img {
+      object-position: center;
+    }
+  }
+}

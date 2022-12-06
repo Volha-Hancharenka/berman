@@ -1,0 +1,260 @@
+.page {
+  &__test {
+  }
+}
+.test {
+  background: url(./../images/meditation/test/bg-img.png) no-repeat 0 0 / cover;
+  overflow: hidden;
+  position: relative;
+  background-position: bottom;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 36, 36, 0.69);
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: rem(80);
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+    @include media(767) {
+      padding-top: rem(30);
+      padding-bottom: rem(40);
+      gap: rem(40);
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+  &__block {
+    justify-content: center;
+    align-items: center;
+    padding: rem(20);
+    border: 1px solid #fff;
+    max-width: rem(1000);
+    margin: 0 auto;
+    @include media(767) {
+      padding: rem(10);
+    }
+  }
+  &__text {
+    text-align: center;
+    font-size: rem(18);
+    line-height: rem(28);
+    font-weight: 300;
+    @include adaptiveClamp("font-size", 18, 16, 767, 425, 1);
+    @include adaptiveClamp("line-height", 28, 20, 767, 425, 1);
+    @include media(767) {
+      text-align: start;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: rem(18);
+    line-height: rem(24);
+    font-weight: 300;
+    max-width: rem(900);
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.5);
+    @include adaptiveClamp("font-size", 18, 16, 767, 425, 1);
+    @include adaptiveClamp("line-height", 24, 20, 767, 425, 1);
+  }
+
+  &__list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+    max-width: 900px;
+  }
+
+  &__item {
+    align-items: center;
+    position: relative;
+    padding-left: 15%;
+    &_btn {
+      display: flex;
+      justify-content: start;
+      @include media(425) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: rem(90);
+    height: rem(90);
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: rem(45);
+    @include adaptiveClamp("width", 90, 30, 900, 425, 1);
+    @include adaptiveClamp("height", 90, 30, 900, 425, 1);
+    @include adaptiveClamp(" font-size", 45, 16, 900, 425, 1);
+  }
+
+  &__paragraph {
+    font-size: rem(18);
+    line-height: rem(24);
+    font-weight: 300;
+    margin-bottom: rem(10);
+    @include adaptiveClamp("font-size", 18, 16, 767, 425, 1);
+    @include adaptiveClamp("line-height", 24, 20, 767, 425, 1);
+  }
+
+  &__btn {
+    margin-top: -10px;
+    //padding: rem(10) rem(12);
+  }
+  // .test__form-wrapper
+  &__form-wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: $standartTrans;
+    &._is-visible {
+      
+    }
+  }
+  // .test__action-form
+  &__action-form {
+    position: relative;
+    max-width: rem(800);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    row-gap: rem(40);
+    padding: rem(32) rem(72);
+    background-color: rgba(111, 143, 180, 36%);
+    backdrop-filter: blur(rem(4));
+    border-radius: rem(36);
+    overflow: hidden;
+    transition: $standartTrans;
+    // box-shadow: 0 0 rem(4) rgba(111, 143, 180, 36%), 
+    //   0 0 rem(8) rgba(111, 143, 180, 36%),
+    //   0 0 rem(30) rgba(111, 143, 180, 36%), 
+    //   0 0 rem(60) rgba(111, 143, 180, 36%);
+    @include media(768) {
+      padding: rem(32);
+    }
+    @include media(425) {
+      padding: rem(24);
+      padding: rem(21) rem(12);
+      border-radius: rem(20);
+      row-gap: rem(21);
+    }
+    &._sending {
+      &::before {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#000, 20%);
+      background-image: url("./../images/loading-01.gif");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: rem(60);
+      backdrop-filter: blur(rem(2));
+      z-index: 10;
+      transition: $standartTrans;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &__action-form-title {
+    text-align: center;
+    font-weight: 200;
+    font-size: rem(30);
+    line-height: prc(36, 30);
+    color: #fff;
+    @include media(425) {
+      font-size: rem(21);
+    }
+  }
+
+  &__field-control {
+    width: 100%;
+  }
+
+  &__textarea-control {
+    resize: none;
+    width: 100%;
+    border: rem(2) solid #fff;
+    border-radius: rem(12);
+    padding: rem(16) rem(12);
+    background-color: transparent;
+    transition: $standartTrans;
+    font-size: rem(20);
+    font-weight: 200;
+    color: #fff;
+    @include hidePlaceholder();
+    @include styledPlaceholder(#ddd);
+    @include media(400) {
+      font-size: rem(16);
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &:focus {
+      box-shadow: 0 0 0 rem(3) rgba(111, 143, 180, 80%);
+      border-color: transparent;
+    }
+    &._error {
+      box-shadow: 0 0 rem(16) red;
+      border-color: transparent;
+    }
+  }
+
+  &__input-control {
+    width: 100%;
+    border: rem(2) solid #fff;
+    border-radius: rem(12);
+    padding: rem(16) rem(12);
+    background-color: transparent;
+    transition: $standartTrans;
+    font-size: rem(20);
+    font-weight: 200;
+    color: #fff;
+    @include hidePlaceholder();
+    @include styledPlaceholder(#ddd);
+    @include media(400) {
+      font-size: rem(16);
+    }
+    &:focus {
+      box-shadow: 0 0 0 rem(3) rgba(111, 143, 180, 80%);
+      border-color: transparent;
+    }
+    &._error {
+      box-shadow: 0 0 rem(16) red;
+      border-color: transparent;
+    }
+  }
+
+  &__submit {
+    @include media(425) {
+      padding: rem(20) rem(12);
+    }
+  }
+}

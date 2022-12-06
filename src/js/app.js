@@ -5,6 +5,7 @@ import { testimonialsPopup } from './modules/testimonialsPopup'
 import { sendingDataForms } from './modules/sendingDataForms'
 import { validateInputTel } from './helpers/validateIputTel'
 import { toggleElements } from './modules/toggleElements'
+import { library } from './modules/library'
 /* Раскомментировать для использования */
 // import { MousePRLX } from './libs/parallaxMouse'
 
@@ -26,3 +27,4 @@ sliderTestimonials()
 testimonialsPopup()
 sendingDataForms()
 toggleElements()
+library()

@@ -340,7 +340,7 @@
             </li>
           </ul>
           <div class="test__form-wrapper" data-toggle-element="taskSubmissionForm">
-            <form class="test__action-form">
+            <form class="test__action-form" data-sending>
               <h4 class="test__action-form-title">
                 Выполните задания и оставьте свои контактные данные
               </h4>
@@ -348,16 +348,31 @@
                 <input type="text" name="user_name" class="test__input-control _req" placeholder="Ваше имя*">
               </div>
               <div class="test__field-control">
-                <textarea name="problems" class="test__textarea-control "
-                  placeholder="Расскажите о своей задаче и способах ее решения в прошлом" type="text"></textarea>
+                <textarea 
+                    name="problems" 
+                    class="test__textarea-control"
+                    placeholder="Расскажите о своей задаче и способах ее решения в прошлом" 
+                    type="text"
+                    rows="3"
+                ></textarea>
               </div>
               <div class="test__field-control">
-                <textarea type="text" name="emotions" class="test__textarea-control "
-                  placeholder="Убеждения и эмоции, связанные с задачей"></textarea>
+                <textarea 
+                    type="text" 
+                    name="emotions" 
+                    class="test__textarea-control"
+                    placeholder="Убеждения и эмоции, связанные с задачей"
+                    rows="3"
+                ></textarea>
               </div>
               <div class="test__field-control">
-                <textarea type="text" name="cituations" class="test__textarea-control "
-                  placeholder="Когда сложные ситуации решались сами собой, что общего между ними"></textarea>
+                <textarea 
+                    type="text" 
+                    name="cituations" 
+                    class="test__textarea-control"
+                    placeholder="Когда сложные ситуации решались сами собой, что общего между ними"
+                    rows="3"
+                ></textarea>
               </div>
               <div class="test__field-control">
                 <input type="tel" name="user_phone" class="test__input-control _req" placeholder="Ваш номер телефона*">

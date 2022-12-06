@@ -144,10 +144,6 @@
     border-radius: rem(36);
     overflow: hidden;
     transition: $standartTrans;
-    // box-shadow: 0 0 rem(4) rgba(111, 143, 180, 36%), 
-    //   0 0 rem(8) rgba(111, 143, 180, 36%),
-    //   0 0 rem(30) rgba(111, 143, 180, 36%), 
-    //   0 0 rem(60) rgba(111, 143, 180, 36%);
     @include media(768) {
       padding: rem(32);
     }
@@ -199,18 +195,18 @@
   }
 
   &__textarea-control {
-    resize: none;
     width: 100%;
+    resize: none;
     border: rem(2) solid #fff;
     border-radius: rem(12);
     padding: rem(16) rem(12);
     background-color: transparent;
-    transition: $standartTrans;
     font-size: rem(20);
     font-weight: 200;
     color: #fff;
-    @include hidePlaceholder();
-    @include styledPlaceholder(#ddd);
+    transition: $standartTrans;
+    @include hidePlaceholder;
+    @include styledPlaceholderTextarea(#ddd);
     @include media(400) {
       font-size: rem(16);
     }

@@ -1,7 +1,7 @@
 import { postData } from '../helpers/postData'
 
 const sendingDataForms = () => {
-  document.querySelectorAll('form').forEach((form) => {
+  document.querySelectorAll('form[data-sending]').forEach((form) => {
     form.addEventListener('submit', async (event) => {
       event.preventDefault()
 

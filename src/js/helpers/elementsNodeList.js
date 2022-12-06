@@ -8,6 +8,8 @@ const lockPaddingElements = document.querySelectorAll('.lock-padding')
 const showContactButton = document.querySelector('[data-type="contacts"]')
 const showFormPopupButton = document.querySelector('[data-type="sendForm"]')
 const testimonialsSliderContainer = document.querySelector('.reviews__swiper-wrapper')
+const mediaPage = document.querySelector('[data-media]')
+const formVerification = document.querySelector('.code-popup__action-form')
 
 export {
   body,
@@ -19,5 +21,7 @@ export {
   lockPaddingElements,
   showContactButton,
   showFormPopupButton,
-  testimonialsSliderContainer
+  testimonialsSliderContainer,
+  mediaPage,
+  formVerification
 }

@@ -7,7 +7,7 @@
 <body>
   <div class="wrapper">
     @@include('html/header.html', {})
-    <main class="page">
+    <main class="page" data-media>
       <div data-observ></div>
       <!--<section class="page__library library">
         <div class="library__container">
@@ -40,7 +40,7 @@
                 <audio class="accordion__audio" preload="auto" controls>
                   <source src="./files/audio/audio-one.mp3">
                 </audio>
-                <button class="accordion__btn" data-type="code"></button>
+                <button class="accordion__btn" data-type="code" data-audio-id="1"></button>
                 <span class="accordion__icon-lock accordion__icon-lock_first">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path
@@ -72,12 +72,6 @@
                   <source src="./files/audio/audio-two.mp3">
                 </audio>
                 <button class="accordion__btn" data-type="code"></button>
-                <span class="accordion__icon-lock accordion__icon-lock_second">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path
-                      d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" />
-                  </svg>
-                </span>
               </div>
             </article>
             <article class="accordion__item">
@@ -103,12 +97,6 @@
                   <source src="./files/audio/audio-three.mp3">
                 </audio>
                 <button class="accordion__btn" data-type="code"></button>
-                <span class="accordion__icon-lock accordion__icon-lock_third">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path
-                      d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" />
-                  </svg>
-                </span>
               </div>
             </article>
             <article class="accordion__item">
@@ -128,18 +116,12 @@
               <div class="accordion__content">
                 <p class="accordion__content-text">
                   С помощью этой медитации вы можете гармонизировать ваши отношения с партнёром и помочь друг другу
-                  восстановить силы. Рекомендуется к прослушиванию вместе с партнёром</p>
-                <audio class="accordion__audio" preload="auto" controls>
-                  <source src="./files/audio/audio-four.mp3">
-                </audio>
-                <button class="accordion__btn" data-type="code"></button>
-                <span class="accordion__icon-lock accordion__icon-lock_four">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path
-                      d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" />
-                  </svg>
-                </span>
-              </div>
+                  восстановить силы. Рекомедуется к прослушиванию вместе с партнёром</p>
+                  <audio class="accordion__audio" preload="auto" controls>
+                    <source src="./files/audio/audio-four.mp3">
+                  </audio>
+                  <button class="accordion__btn" data-type="code"></button>
+                </div>
             </article>
           </div>
         </div>

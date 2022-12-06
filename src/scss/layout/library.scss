@@ -34,7 +34,7 @@
 }
 .accordion {
   padding-bottom: 0px;
- // @include adaptiveClamp("padding-bottom", 60, 30, 900, 425, 1);
+  // @include adaptiveClamp("padding-bottom", 60, 30, 900, 425, 1);
 
   &__container {
     display: flex;
@@ -59,10 +59,11 @@
       0 0 20px 0 rgba(#000, 18%);
     @include adaptiveClamp("padding", 60, 30, 900, 425, 1);
     @include media(400) {
-    padding: 15px;
+      padding: 15px;
     }
   }
   &__item {
+    position: relative;
     border-radius: 50px;
     border: 1px solid #fff;
     background: rgba(111, 143, 180, 0.361);
@@ -86,7 +87,7 @@
     transition: all 300ms ease-in-out;
     @include media(400) {
       padding: 5px 20px;
-      }
+    }
   }
   &__text-title {
     font-weight: 300;
@@ -98,7 +99,7 @@
     word-wrap: break-word;
     @include media(350) {
       font-size: 16px;
-      }
+    }
   }
   &__icon {
     display: block;
@@ -123,17 +124,39 @@
   }
 
   &__content {
-    height: 0;
+    //height: 0;
     overflow: hidden;
     transition: all 200ms linear;
   }
 
   &__content-text {
-    padding: 0 15px 5px;
+   
+    padding: 0 25px 20px;
     font-size: 16px;
     line-height: 130%;
-    color: #333;
-    font-weight: 400;
+    color: #fff;
+    font-weight: 300;
+    @include media(400) {
+      padding: 0 20px 20px;
+    }
+  }
+  &__audio {
+    
+    max-width: 300px;
+    padding: 0 25px 20px;
+    @include media(400) {
+      padding: 0px 60px 20px 20px;
+    }
+  }
+  &__btn {
+    position: absolute;
+     bottom:20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    overflow: hidden;
+    height: 40px;
+    background-color: transparent;
   }
 }
 .hide {

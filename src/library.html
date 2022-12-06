@@ -37,7 +37,12 @@
                   Поможет вам понять как происходит процесс реализации целей. С помощью этой медитации вы можете
                   высторить намерение и запустить процессы для реализации вашей цели
                 </p>
-              </div>
+             
+              <audio class="accordion__audio" preload="auto" controls>
+                <source src="./files/audio/audio-one.mp3">
+              </audio>
+              <button class="accordion__btn" data-type="contacts"></button>
+            </div>
             </article>
             <article class="accordion__item" data-open data-color-back="#fff7f0" data-color-border="#ffd6b3">
               <div class="accordion__header">
@@ -112,6 +117,7 @@
       </section>
     </main>
     @@include('html/footer.html', {})
+    @@include('html/modals/contactsPopup.html', {})
     @@include('html/modals/contactsPopup.html', {})
   </div>
   @@include('html/script.html', {})

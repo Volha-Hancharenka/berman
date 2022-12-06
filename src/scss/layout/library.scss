@@ -1,6 +1,5 @@
 .library {
   padding-top: 120px;
-
   @include media(1000) {
     padding-top: rem(30);
   }
@@ -60,6 +59,11 @@
     &:not(:last-child) {
       margin-bottom: 10px;
     }
+    &.open {
+      .accordion__content {
+        visibility: visible;
+      }
+    }
   }
 
   &__header {
@@ -112,6 +116,7 @@
   &__content {
     height: 0;
     overflow: hidden;
+    visibility: hidden;
     transition: all 200ms linear;
   }
 

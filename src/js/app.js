@@ -6,6 +6,7 @@ import { sendingDataForms } from './modules/sendingDataForms'
 import { validateInputTel } from './helpers/validateIputTel'
 import { toggleElements } from './modules/toggleElements'
 import accordeon from './modules/accordeon'
+import verification from './modules/verification'
 /* Раскомментировать для использования */
 // import { MousePRLX } from './libs/parallaxMouse'
 
@@ -28,3 +29,4 @@ testimonialsPopup()
 sendingDataForms()
 toggleElements()
 accordeon()
+verification()

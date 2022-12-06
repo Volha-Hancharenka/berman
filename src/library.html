@@ -9,11 +9,11 @@
     @@include('html/header.html', {})
     <main class="page">
       <div data-observ></div>
-      <section class="page__library library">
+      <!--<section class="page__library library">
         <div class="library__container">
           <h1 class="library__big-title title">Библиотека медитаций</h1>
         </div>
-      </section>
+      </section>-->
       <section class="page__audio-accord accordion">
         <div class="accordion__container">
           <h2 class="accordion__title title">Аудиотека</h2>
@@ -37,11 +37,17 @@
                   Поможет вам понять как происходит процесс реализации целей. С помощью этой медитации вы можете
                   высторить намерение и запустить процессы для реализации вашей цели
                 </p>
-              <audio class="accordion__audio" preload="auto" controls>
-                <source src="./files/audio/audio-one.mp3">
-              </audio>
-              <button class="accordion__btn" data-type="code"></button>
-            </div>
+                <audio class="accordion__audio" preload="auto" controls>
+                  <source src="./files/audio/audio-one.mp3">
+                </audio>
+                <button class="accordion__btn" data-type="code"></button>
+                <span class="accordion__icon-lock accordion__icon-lock_first">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                      d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" />
+                  </svg>
+                </span>
+              </div>
             </article>
             <article class="accordion__item">
               <div class="accordion__header">
@@ -59,13 +65,19 @@
               </div>
               <div class="accordion__content">
                 <p class="accordion__content-text">
-                  С помощью этой медитации вы можете получить ответ от вашего подсознания на беспокоющий вас вопрос или
+                  С помощью этой медитации вы можете получить ответ от вашего подсознания на беспокоящий вас вопрос,
                   найти выход из сложной ситуации
                 </p>
                 <audio class="accordion__audio" preload="auto" controls>
                   <source src="./files/audio/audio-two.mp3">
                 </audio>
                 <button class="accordion__btn" data-type="code"></button>
+                <span class="accordion__icon-lock accordion__icon-lock_second">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                      d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" />
+                  </svg>
+                </span>
               </div>
             </article>
             <article class="accordion__item">
@@ -84,13 +96,19 @@
               </div>
               <div class="accordion__content">
                 <p class="accordion__content-text">
-                  С помощью этой медитации вы можете получить защиту от энерегетических и эмоциональных воздействий.
+                  С помощью этой медитации вы можете получить защиту от энергетических и эмоциональных воздействий.
                   Восстановить силы и перевести дыхание от воздействующих на вас ситуаций
                 </p>
                 <audio class="accordion__audio" preload="auto" controls>
                   <source src="./files/audio/audio-three.mp3">
                 </audio>
                 <button class="accordion__btn" data-type="code"></button>
+                <span class="accordion__icon-lock accordion__icon-lock_third">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                      d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" />
+                  </svg>
+                </span>
               </div>
             </article>
             <article class="accordion__item">
@@ -110,21 +128,27 @@
               <div class="accordion__content">
                 <p class="accordion__content-text">
                   С помощью этой медитации вы можете гармонизировать ваши отношения с партнёром и помочь друг другу
-                  восстановить силы. Рекомедуется к прослушиванию вместе с партнёром</p>
-                  <audio class="accordion__audio" preload="auto" controls>
-                    <source src="./files/audio/audio-four.mp3">
-                  </audio>
-                  <button class="accordion__btn" data-type="code"></button>
-                </div>
+                  восстановить силы. Рекомендуется к прослушиванию вместе с партнёром</p>
+                <audio class="accordion__audio" preload="auto" controls>
+                  <source src="./files/audio/audio-four.mp3">
+                </audio>
+                <button class="accordion__btn" data-type="code"></button>
+                <span class="accordion__icon-lock accordion__icon-lock_four">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                      d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" />
+                  </svg>
+                </span>
+              </div>
             </article>
           </div>
         </div>
       </section>
-     <!--<section class="page__video-accord accordion">
+      <!--<section class="page__video-accord accordion">
         <div class="accordion__container">
           <h2 class="accordion__title title">Видеотека</h2>
         </div>
-      </section>--> 
+      </section>-->
     </main>
     @@include('html/footer.html', {})
     @@include('html/modals/contactsPopup.html', {})

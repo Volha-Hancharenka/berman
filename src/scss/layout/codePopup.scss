@@ -115,4 +115,17 @@
       padding: rem(20) rem(12);
     }
   }
+ 
+  &__link {
+    background-color: transparent;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    transition: all 0.3s ease;
+    &:hover, &:focus {
+      color:#000;
+    }
+  }
 }

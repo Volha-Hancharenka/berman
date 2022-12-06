@@ -1,4 +1,4 @@
-.library {
+/*.library {
   padding-top: 120px;
   padding-bottom: rem(60);
   @include media(1000) {
@@ -21,9 +21,9 @@
       @include adaptiveClamp("font-size", 36, 22, 767, 425, 1);
     }
   }
-}
+}*/
 .accordion {
-  
+  padding-top: rem(30);
   background: url(./../images/library/bg-img.png) no-repeat 0 0 / cover;
   overflow: hidden;
   position: relative;
@@ -131,6 +131,7 @@
   }
 
   &__content {
+   // position: relative;
     height: 0;
     overflow: hidden;
     visibility: hidden;
@@ -147,12 +148,15 @@
       padding: 10px 20px 20px;
     }
   }
+ 
   &__audio {
+    position: relative;
     max-width: 300px;
     padding: 0 25px 20px;
     @include media(400) {
       padding: 0px 60px 20px 20px;
     }
+   
   }
   &__btn {
     position: absolute;
@@ -163,5 +167,49 @@
     overflow: hidden;
     height: 40px;
     background-color: transparent;
+  }
+  &__icon-lock {
+    width: 15px;
+    height: 15px;
+    
+    & svg 
+    path {
+      fill: gold;
+    }
+    &_first {
+      bottom:15%;
+      right :38%;
+      @include media(768) {
+        bottom:17%;
+      }
+      @include media(767) {
+        bottom:12%;
+        right :5%;
+      }
+    }
+    &_second {
+      bottom:17%;
+      right :38%;
+      @include media(767) {
+        bottom:14%;
+        right :5%;
+      }
+    }
+    &_third {
+      bottom:15%;
+      right :38%;
+      @include media(767) {
+        bottom:13%;
+        right :5%;
+      }
+    }
+    &_four {
+      bottom:15%;
+      right :38%;
+      @include media(767) {
+        bottom:13%;
+        right :5%;
+      }
+    }
   }
 }

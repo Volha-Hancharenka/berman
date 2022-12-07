@@ -10,12 +10,12 @@
     position: relative;
     z-index: 2;
     display: flex;
-   
+
     justify-content: center;
     align-items: center;
-   flex-direction: column;
+    flex-direction: column;
     margin: 0 auto;
-    @include adaptiveClamp("gap", 64, 30, 1300, 900, 1);
+
     @include media(1000) {
       flex-direction: column;
     }
@@ -27,43 +27,38 @@
     font-size: 36px;
     line-height: rem(50);
     letter-spacing: 10px;
-  
-    
+    margin-bottom: rem(30);
     @include media(767) {
-     
       letter-spacing: 6px;
       @include adaptiveClamp("font-size", 36, 22, 767, 425, 1);
       @include adaptiveClamp(" line-height", 50, 22, 767, 425, 1);
     }
   }
   &__description {
-    max-width: 900px;
+    max-width: 920px;
     align-items: center;
-   margin: 0 auto;
+    margin: 0 auto;
     text-align: center;
-   
+    margin-bottom: rem(20);
     font-size: 18px;
     font-weight: 300;
     line-height: prc(26, 18);
-    margin-bottom: 30px;
     @include adaptiveClamp("font-size", 18, 16, 500, 425, 1);
     @include media(768) {
       max-width: 700px;
     }
-    @include media(767) {
-      margin-bottom: 20px;
-     
-    }
   }
   &__content {
+    margin-top: rem(50);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 64px;
-   
-
+    @include media(767) {
+      margin-top: rem(30);
+    }
   }
-  
+
   &__image-img {
     position: relative;
     width: 100%;
@@ -80,7 +75,7 @@
       }
     }
   }
- 
+
   &__article-p {
     &_strong {
       font-weight: 500;
@@ -115,12 +110,7 @@
   display: flex;
   flex-direction: column;
   row-gap: rem(18);
-   @include media(1100) {
-    row-gap: rem(5);
-  }
-  @include media(1000) {
-    row-gap: rem(18);
-  }
+ 
   @include adaptiveClamp("row-gap", 18, 10, 500, 425, 1);
 }
 .article-p {
@@ -128,7 +118,12 @@
   font-weight: 300;
   line-height: prc(26, 18);
   margin-bottom: 10px;
- 
+  @include media(1100) {
+    margin-bottom: 0;
+  }
+  @include media(1000) {
+    margin-bottom: 10px;
+  }
   @include adaptiveClamp("font-size", 18, 16, 500, 425, 1);
 }
 .btn {

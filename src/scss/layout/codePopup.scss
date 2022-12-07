@@ -14,7 +14,7 @@
     row-gap: rem(20);
     top: rem(-100);
     margin: 0 auto;
-    opacity: 0.9;
+   // opacity: 0.9;
     max-width: rem(400);
     position: relative;
     padding: rem(30);
@@ -125,7 +125,7 @@
     line-height: 20px;
     transition: all 0.3s ease;
     &:hover, &:focus {
-      color:#000;
+      text-decoration: none ;
     }
   }
 }

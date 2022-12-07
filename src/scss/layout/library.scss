@@ -1,27 +1,7 @@
-/*.library {
-  padding-top: 120px;
-  padding-bottom: rem(60);
-  @include media(1000) {
-    padding-top: rem(30);
+.page {
+  &__audio-accord {
   }
-  &__container {
-  }
-
-  &__big-title {
-    text-align: center;
-    font-weight: 500;
-    text-shadow: 1px 1px 6px rgba(#000, 30%);
-    font-size: 36px;
-    letter-spacing: 10px;
-    margin-bottom: rem(20);
-    line-height: 22px;
-    @include media(767) {
-      margin-bottom: 0;
-      letter-spacing: 6px;
-      @include adaptiveClamp("font-size", 36, 22, 767, 425, 1);
-    }
-  }
-}*/
+}
 .accordion {
   padding-top: rem(30);
   background: url(./../images/library/bg-img.png) no-repeat 0 0 / cover;

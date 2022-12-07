@@ -2,7 +2,7 @@
   padding-top: 120px;
   padding-bottom: 120px;
   @include adaptiveClamp("padding-bottom", 120, 30, 900, 425, 1);
-  @include media(1000) {
+  @include media(1024) {
     padding-top: rem(30);
   }
   position: relative;

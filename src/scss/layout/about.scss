@@ -2,7 +2,7 @@
   padding-top: 120px;
   padding-bottom: 120px;
   @include adaptiveClamp("padding-bottom", 120, 30, 900, 425, 1);
-  @include media(1000) {
+  @include media(1024) {
     padding-top: rem(30);
   }
   position: relative;
@@ -10,9 +10,10 @@
     position: relative;
     z-index: 2;
     display: flex;
+   
     justify-content: center;
     align-items: center;
-    gap: 64px;
+   flex-direction: column;
     margin: 0 auto;
     @include adaptiveClamp("gap", 64, 30, 1300, 900, 1);
     @include media(1000) {
@@ -20,12 +21,53 @@
     }
   }
   &__title {
-    margin-bottom: 48px;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 1px 1px 6px rgba(#000, 30%);
+    font-size: 36px;
+    line-height: rem(50);
+    letter-spacing: 10px;
+  
+    
+    @include media(767) {
+     
+      letter-spacing: 6px;
+      @include adaptiveClamp("font-size", 36, 22, 767, 425, 1);
+      @include adaptiveClamp(" line-height", 50, 22, 767, 425, 1);
+    }
   }
+  &__description {
+    max-width: 900px;
+    align-items: center;
+   margin: 0 auto;
+    text-align: center;
+   
+    font-size: 18px;
+    font-weight: 300;
+    line-height: prc(26, 18);
+    margin-bottom: 30px;
+    @include adaptiveClamp("font-size", 18, 16, 500, 425, 1);
+    @include media(768) {
+      max-width: 700px;
+    }
+    @include media(767) {
+      margin-bottom: 20px;
+     
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+   
+
+  }
+  
   &__image-img {
     position: relative;
     width: 100%;
-    padding-bottom: prc(300, 584);
+    padding-bottom: prc(270, 584);
     overflow: hidden;
     box-shadow: $blockBoxShadow;
     @include media(1000) {
@@ -38,6 +80,7 @@
       }
     }
   }
+ 
   &__article-p {
     &_strong {
       font-weight: 500;
@@ -72,6 +115,12 @@
   display: flex;
   flex-direction: column;
   row-gap: rem(18);
+   @include media(1100) {
+    row-gap: rem(5);
+  }
+  @include media(1000) {
+    row-gap: rem(18);
+  }
   @include adaptiveClamp("row-gap", 18, 10, 500, 425, 1);
 }
 .article-p {
@@ -79,6 +128,7 @@
   font-weight: 300;
   line-height: prc(26, 18);
   margin-bottom: 10px;
+ 
   @include adaptiveClamp("font-size", 18, 16, 500, 425, 1);
 }
 .btn {

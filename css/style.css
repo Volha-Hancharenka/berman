@@ -1292,22 +1292,24 @@ body.lock {
   font-size: 36px;
   line-height: 3.125rem;
   letter-spacing: 10px;
+  margin-bottom: 1.875rem;
 }
 
 .about__description {
-  max-width: 900px;
+  max-width: 920px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 1.25rem;
   font-size: 18px;
   font-weight: 300;
   line-height: 144.4444444444%;
-  margin-bottom: 30px;
 }
 
 .about__content {
+  margin-top: 3.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3300,18 +3302,15 @@ body.lock {
   border-color: transparent;
 }
 
-.no-webp .accordion {
+.no-webp .page_library {
   background: url(./../images/library/bg-img.png) no-repeat 0 0/cover; }
 
-.accordion {
-  padding-top: 1.875rem;
+.page_library {
   overflow: hidden;
-  position: relative;
   background-position: center;
-  padding-bottom: 3.75rem;
 }
 
-.accordion::before {
+.page_library::before {
   content: "";
   position: absolute;
   top: 0;
@@ -3319,6 +3318,12 @@ body.lock {
   width: 100%;
   height: 100%;
   background: rgba(24, 26, 27, 0.6);
+}
+
+.accordion {
+  padding-top: 1.875rem;
+  position: relative;
+  padding-bottom: 3.75rem;
 }
 
 .accordion__container {
@@ -3909,7 +3914,6 @@ body.lock {
   row-gap: 1.25rem;
   top: -6.25rem;
   margin: 0 auto;
-  opacity: 0.9;
   max-width: 25rem;
   position: relative;
   padding: 1.875rem;
@@ -4089,7 +4093,7 @@ body.lock {
 
 .code-popup__link:hover,
 .code-popup__link:focus {
-  color: #000;
+  text-decoration: none;
 }
 
 .testi-image-popup {
@@ -4304,10 +4308,6 @@ body.lock {
 }
 
 @media (min-width: 81.25em) {
-  .about__container {
-    gap: 4rem;
-  }
-
   .content {
     gap: 4rem;
   }
@@ -4352,8 +4352,8 @@ body.lock {
 }
 
 @media (max-width: 1100.98px) {
-  .articles {
-    row-gap: 0.3125rem;
+  .article-p {
+    margin-bottom: 0;
   }
 
   .work {
@@ -4436,8 +4436,8 @@ body.lock {
     top: 46%;
   }
 
-  .articles {
-    row-gap: 1.125rem;
+  .article-p {
+    margin-bottom: 10px;
   }
 
   .stars-left {
@@ -4813,8 +4813,8 @@ body.lock {
     letter-spacing: 6px;
   }
 
-  .about__description {
-    margin-bottom: 20px;
+  .about__content {
+    margin-top: 1.875rem;
   }
 
   .work__container {
@@ -5360,10 +5360,6 @@ body.lock {
 }
 
 @media (max-width: 56.25em) {
-  .about__container {
-    gap: 1.875rem;
-  }
-
   .work__content {
     gap: 1.875rem;
   }
@@ -5701,32 +5697,6 @@ body.lock {
 @supports not (padding: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
     .accordion__block {
       padding: calc(1.875rem + 1.875 * (100vw - 26.5625rem) / 29.6875);
-    }
-}
-}
-
-@media (min-width: 56.25em) and (max-width: 81.25em) {
-@supports (gap: clamp( 1.875rem , -2.90625rem  +  8.5vw , 4rem )) {
-    .about__container {
-      gap: clamp( 1.875rem , -2.90625rem  +  8.5vw , 4rem );
-    }
-}
-
-@supports not (gap: clamp( 1.875rem , -2.90625rem  +  8.5vw , 4rem )) {
-    .about__container {
-      gap: calc(1.875rem + 2.125 * (100vw - 56.25rem) / 25);
-    }
-}
-
-@supports (gap: clamp( 1.875rem , -2.90625rem  +  8.5vw , 4rem )) {
-    .content {
-      gap: clamp( 1.875rem , -2.90625rem  +  8.5vw , 4rem );
-    }
-}
-
-@supports not (gap: clamp( 1.875rem , -2.90625rem  +  8.5vw , 4rem )) {
-    .content {
-      gap: calc(1.875rem + 2.125 * (100vw - 56.25rem) / 25);
     }
 }
 }
@@ -6193,6 +6163,20 @@ body.lock {
 }
 }
 
+@media (min-width: 56.25em) and (max-width: 81.25em) {
+@supports (gap: clamp( 1.875rem , -2.90625rem  +  8.5vw , 4rem )) {
+    .content {
+      gap: clamp( 1.875rem , -2.90625rem  +  8.5vw , 4rem );
+    }
+}
+
+@supports not (gap: clamp( 1.875rem , -2.90625rem  +  8.5vw , 4rem )) {
+    .content {
+      gap: calc(1.875rem + 2.125 * (100vw - 56.25rem) / 25);
+    }
+}
+}
+
 @media (min-width: 26.5625em) and (max-width: 62.5em) {
 @supports (font-size: clamp( 1.125rem , 0.4782608696rem  +  2.4347826087vw , 2rem )) {
     .title-identical_last {
@@ -6279,7 +6263,7 @@ body.lock {
 
 .webp .test { background: url(./../images/meditation/test/bg-img.webp) no-repeat 0 0/cover; }
 
-.webp .accordion { background: url(./../images/library/bg-img.webp) no-repeat 0 0/cover; }
+.webp .page_library { background: url(./../images/library/bg-img.webp) no-repeat 0 0/cover; }
 
 .webp .send-form-popup { background-image: url(./../images/modal/bg.webp); }
 

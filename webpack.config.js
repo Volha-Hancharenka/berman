@@ -1,11 +1,11 @@
 import * as pathNode from 'path'
 
 const srcFolder = 'src'
-const builFolder = 'dist'
+const buildFolder = 'dist'
 
 const path = {
   src: pathNode.resolve(srcFolder),
-  build: pathNode.resolve(builFolder),
+  build: pathNode.resolve(buildFolder),
 }
 
 export const webpackConfig = (isMode) => ({

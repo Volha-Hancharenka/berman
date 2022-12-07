@@ -177,7 +177,18 @@
     height: 40px;
     background-color: transparent;
   }
+  &__icon-unlock {
+    display: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    & svg 
+    path {
+      fill: gold;
+    }
+  }
   &__icon-lock {
+    
     position: absolute;
     width: 15px;
     height: 15px;

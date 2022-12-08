@@ -38,7 +38,7 @@
   &__image-img {
     position: relative;
     width: 100%;
-    padding-bottom: prc(300, 600);
+    padding-bottom: prc(250, 600);
     overflow: hidden;
     box-shadow: $blockBoxShadow;
     @include media(1000) {

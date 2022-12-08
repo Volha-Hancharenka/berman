@@ -158,21 +158,32 @@
     height: 40px;
     background-color: transparent;
   }
+  &__lock {
+    &._is-unlock {
+      .accordion__icon-unlock {
+        display: none;
+      }
+      .accordion__icon-lock {
+        display: block;
+      }
+    }
+  }
   &__icon-unlock {
     display: none;
     position: absolute;
     width: 16px;
     height: 16px;
-    & svg path {
+    path {
       fill: gold;
     }
   }
   &__icon-lock {
+    display: block;
     position: absolute;
     width: 15px;
     height: 15px;
 
-    & svg path {
+    path {
       fill: gold;
     }
     &_first {

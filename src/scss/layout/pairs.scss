@@ -16,10 +16,7 @@
     @include adaptiveClamp("row-gap", 100, 50, 767, 425, 1);
   }
 
-  &__title {
-    margin-bottom: rem(48);
-   
-  }
+ 
   &__big-title {
     text-align: center;
     font-weight: 500;
@@ -41,11 +38,11 @@
     padding-bottom: prc(300, 600);
     overflow: hidden;
     box-shadow: $blockBoxShadow;
-    @include media(1000) {
+    /*@include media(1000) {
       padding-bottom: 100%;
     }
     img {
       object-position: center;
-    }
+    }*/
   }
 }

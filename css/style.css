@@ -1946,10 +1946,6 @@ body.lock {
   row-gap: 6.25rem;
 }
 
-.personal__title {
-  margin-bottom: 3rem;
-}
-
 .personal__big-title {
   text-align: center;
   font-weight: 500;
@@ -2459,10 +2455,6 @@ body.lock {
   row-gap: 6.25rem;
 }
 
-.pairs__title {
-  margin-bottom: 3rem;
-}
-
 .pairs__big-title {
   text-align: center;
   font-weight: 500;
@@ -2476,15 +2468,13 @@ body.lock {
 .pairs__image-img {
   position: relative;
   width: 100%;
-  padding-bottom: 50%;
+  padding-bottom: 41.6666666667%;
   overflow: hidden;
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 0 15px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 0 15px 0 rgba(0, 0, 0, 0.2);
-}
-
-.pairs__image-img img {
-  -o-object-position: center;
+  /* img {
      object-position: center;
+   }*/
 }
 
 .no-webp .pair-key {
@@ -3357,7 +3347,6 @@ body.lock {
 }
 
 .accordion__item {
-  position: relative;
   border-radius: 10px;
   border: 1px solid #fff;
   background: rgba(111, 143, 180, 0.361);
@@ -3442,64 +3431,56 @@ body.lock {
   font-weight: 300;
 }
 
+.accordion__files {
+  position: relative;
+  padding: 0px 25px 0px;
+}
+
 .accordion__audio {
   position: relative;
   max-width: 300px;
-  padding: 0 25px 20px;
+  padding: 10px 0px;
 }
 
 .accordion__btn {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-      -ms-transform: translate(-50%);
-          transform: translate(-50%);
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 100%;
   overflow: hidden;
   height: 40px;
   background-color: transparent;
 }
 
-.accordion__icon-unlock {
-  display: none;
+.accordion__lock {
   position: absolute;
   width: 16px;
   height: 16px;
+  top: 30%;
+  right: 30%;
 }
 
-.accordion__icon-unlock svg path {
+.accordion__lock path {
   fill: gold;
+}
+
+.accordion__lock._is-unlock .accordion__icon-unlock {
+  display: none;
+}
+
+.accordion__lock._is-unlock .accordion__icon-lock {
+  display: block;
+}
+
+.accordion__icon-unlock {
+  display: none;
 }
 
 .accordion__icon-lock {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-}
-
-.accordion__icon-lock svg path {
-  fill: gold;
-}
-
-.accordion__icon-lock_first {
-  bottom: 15%;
-  right: 38%;
-}
-
-.accordion__icon-lock_second {
-  bottom: 17%;
-  right: 38%;
-}
-
-.accordion__icon-lock_third {
-  bottom: 15%;
-  right: 38%;
-}
-
-.accordion__icon-lock_four {
-  bottom: 15%;
-  right: 38%;
+  display: block;
 }
 
 .no-webp .send-form-popup {
@@ -4760,10 +4741,6 @@ body.lock {
     padding: 2rem;
   }
 
-  .accordion__icon-lock_first {
-    bottom: 17%;
-  }
-
   .send-form-popup__close {
     top: -2.5rem;
     right: -0.75rem;
@@ -4913,24 +4890,12 @@ body.lock {
     text-align: start;
   }
 
-  .accordion__icon-lock_first {
-    bottom: 12%;
-    right: 5%;
+  .accordion__audio {
+    max-width: 250px;
   }
 
-  .accordion__icon-lock_second {
-    bottom: 14%;
-    right: 5%;
-  }
-
-  .accordion__icon-lock_third {
-    bottom: 13%;
-    right: 5%;
-  }
-
-  .accordion__icon-lock_four {
-    bottom: 13%;
-    right: 5%;
+  .accordion__lock {
+    right: 8%;
   }
 
   .option-gift-popup__body {
@@ -5265,6 +5230,12 @@ body.lock {
   }
 }
 
+@media (max-width: 420.98px) {
+  .accordion__audio {
+    max-width: 220px;
+  }
+}
+
 @media (max-width: 400.98px) {
   .option__title ._hide {
     display: none;
@@ -5287,11 +5258,11 @@ body.lock {
   }
 
   .accordion__content-text {
-    padding: 10px 20px 20px;
+    padding: 10px 20px 10px;
   }
 
-  .accordion__audio {
-    padding: 0px 60px 20px 20px;
+  .accordion__files {
+    padding: 0px 20px 0px;
   }
 }
 
@@ -5323,23 +5294,16 @@ body.lock {
     padding: 10px 20px 20px 10px;
   }
 
+  .accordion__files {
+    padding: 0px 10px 0px 10px;
+  }
+
   .accordion__audio {
-    padding: 0px 80px 20px 10px;
+    max-width: 210px;
   }
 
-  .accordion__icon-lock_second {
-    bottom: 13%;
-    right: 5%;
-  }
-
-  .accordion__icon-lock_third {
-    bottom: 12%;
-    right: 5%;
-  }
-
-  .accordion__icon-lock_four {
-    bottom: 12%;
-    right: 5%;
+  .accordion__lock {
+    right: 4%;
   }
 }
 

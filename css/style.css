@@ -3360,6 +3360,10 @@ body.lock {
   visibility: visible;
 }
 
+.accordion__item._is-unlock .accordion__btn {
+  display: none;
+}
+
 .accordion__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3468,11 +3472,11 @@ body.lock {
 }
 
 .accordion__lock._is-unlock .accordion__icon-unlock {
-  display: none;
+  display: block;
 }
 
 .accordion__lock._is-unlock .accordion__icon-lock {
-  display: block;
+  display: none;
 }
 
 .accordion__icon-unlock {
@@ -3899,9 +3903,9 @@ body.lock {
   position: relative;
   padding: 1.875rem;
   border-radius: 3.125rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#21363D), to(#3F5E7D)), -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), to(#FFFFFF));
-  background: -o-linear-gradient(top, #21363D 0%, #3F5E7D 100%), -o-linear-gradient(bottom, #FFFFFF, #FFFFFF);
-  background: linear-gradient(180deg, #21363D 0%, #3F5E7D 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#21363d), to(#3f5e7d)), -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff));
+  background: -o-linear-gradient(top, #21363d 0%, #3f5e7d 100%), -o-linear-gradient(bottom, #ffffff, #ffffff);
+  background: linear-gradient(180deg, #21363d 0%, #3f5e7d 100%), linear-gradient(0deg, #ffffff, #ffffff);
   overflow: hidden;
   -webkit-transition: top 220ms ease-in-out;
   -o-transition: top 220ms ease-in-out;
@@ -3935,6 +3939,13 @@ body.lock {
 .code-popup__action-form._sending::before {
   opacity: 1;
   visibility: visible;
+}
+
+.code-popup__action-form._error .code-popup__mistake {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .code-popup__action-form::before {
@@ -4058,6 +4069,19 @@ body.lock {
   -webkit-box-shadow: 0 0 1rem red;
           box-shadow: 0 0 1rem red;
   border-color: transparent;
+}
+
+.code-popup__mistake {
+  text-align: center;
+  color: #ff4040;
+  font-weight: 700;
+  -webkit-transition: all 280ms ease-in-out 0ms;
+  -o-transition: all 280ms ease-in-out 0ms;
+  transition: all 280ms ease-in-out 0ms;
+  -webkit-transform: translateY(-2.5rem);
+      -ms-transform: translateY(-2.5rem);
+          transform: translateY(-2.5rem);
+  opacity: 0;
 }
 
 .code-popup__link {

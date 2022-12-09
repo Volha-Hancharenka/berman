@@ -45,7 +45,10 @@
     background: rgba(111, 143, 180, 0.361);
     box-shadow: 0 0 3px 0 rgba(#000, 18%), 0 0 5px 0 rgba(#000, 18%), 0 0 10px 0 rgba(#000, 18%),
       0 0 20px 0 rgba(#000, 18%);
-    @include adaptiveClamp("padding", 60, 30, 900, 425, 1);
+    @include adaptiveClamp("padding-top", 60, 30, 900, 425, 1);
+    @include adaptiveClamp("padding-bottom", 60, 30, 900, 425, 1);
+    @include adaptiveClamp("padding-left", 60, 30, 900, 425, 1);
+    @include adaptiveClamp("padding-right", 60, 30, 900, 425, 1);
     @include media(400) {
       padding: 15px;
     }

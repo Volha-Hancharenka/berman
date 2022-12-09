@@ -4284,7 +4284,19 @@ body.lock {
   }
 
   .accordion__block {
-    padding: 3.75rem;
+    padding-top: 3.75rem;
+  }
+
+  .accordion__block {
+    padding-bottom: 3.75rem;
+  }
+
+  .accordion__block {
+    padding-left: 3.75rem;
+  }
+
+  .accordion__block {
+    padding-right: 3.75rem;
   }
 }
 
@@ -5505,7 +5517,19 @@ body.lock {
   }
 
   .accordion__block {
-    padding: 1.875rem;
+    padding-top: 1.875rem;
+  }
+
+  .accordion__block {
+    padding-bottom: 1.875rem;
+  }
+
+  .accordion__block {
+    padding-left: 1.875rem;
+  }
+
+  .accordion__block {
+    padding-right: 1.875rem;
   }
 }
 
@@ -5676,15 +5700,51 @@ body.lock {
     }
 }
 
-@supports (padding: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
+@supports (padding-top: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
     .accordion__block {
-      padding: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem );
+      padding-top: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem );
     }
 }
 
-@supports not (padding: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
+@supports not (padding-top: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
     .accordion__block {
-      padding: calc(1.875rem + 1.875 * (100vw - 26.5625rem) / 29.6875);
+      padding-top: calc(1.875rem + 1.875 * (100vw - 26.5625rem) / 29.6875);
+    }
+}
+
+@supports (padding-bottom: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
+    .accordion__block {
+      padding-bottom: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
+    .accordion__block {
+      padding-bottom: calc(1.875rem + 1.875 * (100vw - 26.5625rem) / 29.6875);
+    }
+}
+
+@supports (padding-left: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
+    .accordion__block {
+      padding-left: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem );
+    }
+}
+
+@supports not (padding-left: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
+    .accordion__block {
+      padding-left: calc(1.875rem + 1.875 * (100vw - 26.5625rem) / 29.6875);
+    }
+}
+
+@supports (padding-right: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
+    .accordion__block {
+      padding-right: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem );
+    }
+}
+
+@supports not (padding-right: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
+    .accordion__block {
+      padding-right: calc(1.875rem + 1.875 * (100vw - 26.5625rem) / 29.6875);
     }
 }
 }

@@ -51,7 +51,6 @@
     }
   }
   &__item {
-   
     border-radius: 10px;
     border: 1px solid #fff;
     background: rgba(111, 143, 180, 0.361);
@@ -61,6 +60,11 @@
     &.open {
       .accordion__content {
         visibility: visible;
+      }
+    }
+    &._is-unlock {
+      .accordion__btn {
+        display: none;
       }
     }
   }
@@ -116,7 +120,6 @@
   }
 
   &__content {
-    
     height: 0;
     overflow: hidden;
     visibility: hidden;
@@ -136,34 +139,34 @@
       padding: 10px 20px 20px 10px;
     }
   }
-&__files {
-  position: relative;
-  padding: 0px 25px 0px;
-  @include media(400) {
-    padding: 0px 20px 0px;
+  &__files {
+    position: relative;
+    padding: 0px 25px 0px;
+    @include media(400) {
+      padding: 0px 20px 0px;
+    }
+    @include media(350) {
+      padding: 0px 10px 0px 10px;
+    }
   }
-  @include media(350) {
-    padding: 0px 10px 0px 10px;
-  }
-}
   &__audio {
     position: relative;
     max-width: 300px;
     padding: 10px 0px;
-   @include media(767) {
-       max-width: 250px;
+    @include media(767) {
+      max-width: 250px;
     }
     @include media(420) {
       max-width: 220px;
-   }
-     @include media(350) {
+    }
+    @include media(350) {
       max-width: 210px;
     }
   }
   &__btn {
     position: absolute;
     top: 50%;
-    left:0;
+    left: 0;
     transform: translateY(-50%);
     width: 100%;
     overflow: hidden;
@@ -178,25 +181,24 @@
     right: 30%;
     @include media(767) {
       right: 8%;
-   }
-   @include media(350) {
-    right: 4%;
- }
+    }
+    @include media(350) {
+      right: 4%;
+    }
     path {
       fill: gold;
     }
     &._is-unlock {
       .accordion__icon-unlock {
-        display: none;
+        display: block;
       }
       .accordion__icon-lock {
-        display: block;
+        display: none;
       }
     }
   }
   &__icon-unlock {
     display: none;
-    
   }
   &__icon-lock {
     display: block;

@@ -3339,7 +3339,6 @@ body.lock {
 .accordion__block {
   width: 100%;
   max-width: 630px;
-  padding: 60px;
   border-radius: 20px;
   background: rgba(111, 143, 180, 0.361);
   -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.18), 0 0 5px 0 rgba(0, 0, 0, 0.18), 0 0 10px 0 rgba(0, 0, 0, 0.18), 0 0 20px 0 rgba(0, 0, 0, 0.18);
@@ -5285,10 +5284,6 @@ body.lock {
     font-size: 1rem;
   }
 
-  .accordion__block {
-    padding: 15px;
-  }
-
   .accordion__header {
     padding: 5px 20px;
   }
@@ -5299,6 +5294,24 @@ body.lock {
 
   .accordion__files {
     padding: 0px 20px 0px;
+  }
+}
+
+@media (max-width: 25em) {
+  .accordion__block {
+    padding-top: 0.9375rem;
+  }
+
+  .accordion__block {
+    padding-bottom: 0.9375rem;
+  }
+
+  .accordion__block {
+    padding-left: 0.9375rem;
+  }
+
+  .accordion__block {
+    padding-right: 0.9375rem;
   }
 }
 
@@ -5320,6 +5333,7 @@ body.lock {
 @media (max-width: 350.98px) {
   .accordion__header {
     padding-left: 10px;
+    padding-right: 10px;
   }
 
   .accordion__text-title {
@@ -5515,22 +5529,6 @@ body.lock {
   .accordion__title {
     margin-top: 1.875rem;
   }
-
-  .accordion__block {
-    padding-top: 1.875rem;
-  }
-
-  .accordion__block {
-    padding-bottom: 1.875rem;
-  }
-
-  .accordion__block {
-    padding-left: 1.875rem;
-  }
-
-  .accordion__block {
-    padding-right: 1.875rem;
-  }
 }
 
 @media (min-width: 48em) and (max-width: 87.5em) {
@@ -5697,54 +5695,6 @@ body.lock {
 @supports not ( font-size: clamp( 1rem , -0.6217105263rem  +  6.1052631579vw , 2.8125rem )) {
     .test__number {
       font-size: calc(1rem + 1.8125 * (100vw - 26.5625rem) / 29.6875);
-    }
-}
-
-@supports (padding-top: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
-    .accordion__block {
-      padding-top: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem );
-    }
-}
-
-@supports not (padding-top: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
-    .accordion__block {
-      padding-top: calc(1.875rem + 1.875 * (100vw - 26.5625rem) / 29.6875);
-    }
-}
-
-@supports (padding-bottom: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
-    .accordion__block {
-      padding-bottom: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
-    .accordion__block {
-      padding-bottom: calc(1.875rem + 1.875 * (100vw - 26.5625rem) / 29.6875);
-    }
-}
-
-@supports (padding-left: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
-    .accordion__block {
-      padding-left: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem );
-    }
-}
-
-@supports not (padding-left: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
-    .accordion__block {
-      padding-left: calc(1.875rem + 1.875 * (100vw - 26.5625rem) / 29.6875);
-    }
-}
-
-@supports (padding-right: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
-    .accordion__block {
-      padding-right: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem );
-    }
-}
-
-@supports not (padding-right: clamp( 1.875rem , 0.1973684211rem  +  6.3157894737vw , 3.75rem )) {
-    .accordion__block {
-      padding-right: calc(1.875rem + 1.875 * (100vw - 26.5625rem) / 29.6875);
     }
 }
 }
@@ -6283,6 +6233,56 @@ body.lock {
 @supports not ( padding-bottom: clamp( 1.875rem , -3.5459183673rem  +  20.4081632653vw , 6.25rem )) {
     .kind__container {
       padding-bottom: calc(1.875rem + 4.375 * (100vw - 26.5625rem) / 21.4375);
+    }
+}
+}
+
+@media (min-width: 25em) and (max-width: 56.25em) {
+@supports (padding-top: clamp( 0.9375rem , -1.3125rem  +  9vw , 3.75rem )) {
+    .accordion__block {
+      padding-top: clamp( 0.9375rem , -1.3125rem  +  9vw , 3.75rem );
+    }
+}
+
+@supports not (padding-top: clamp( 0.9375rem , -1.3125rem  +  9vw , 3.75rem )) {
+    .accordion__block {
+      padding-top: calc(0.9375rem + 2.8125 * (100vw - 25rem) / 31.25);
+    }
+}
+
+@supports (padding-bottom: clamp( 0.9375rem , -1.3125rem  +  9vw , 3.75rem )) {
+    .accordion__block {
+      padding-bottom: clamp( 0.9375rem , -1.3125rem  +  9vw , 3.75rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 0.9375rem , -1.3125rem  +  9vw , 3.75rem )) {
+    .accordion__block {
+      padding-bottom: calc(0.9375rem + 2.8125 * (100vw - 25rem) / 31.25);
+    }
+}
+
+@supports (padding-left: clamp( 0.9375rem , -1.3125rem  +  9vw , 3.75rem )) {
+    .accordion__block {
+      padding-left: clamp( 0.9375rem , -1.3125rem  +  9vw , 3.75rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.9375rem , -1.3125rem  +  9vw , 3.75rem )) {
+    .accordion__block {
+      padding-left: calc(0.9375rem + 2.8125 * (100vw - 25rem) / 31.25);
+    }
+}
+
+@supports (padding-right: clamp( 0.9375rem , -1.3125rem  +  9vw , 3.75rem )) {
+    .accordion__block {
+      padding-right: clamp( 0.9375rem , -1.3125rem  +  9vw , 3.75rem );
+    }
+}
+
+@supports not (padding-right: clamp( 0.9375rem , -1.3125rem  +  9vw , 3.75rem )) {
+    .accordion__block {
+      padding-right: calc(0.9375rem + 2.8125 * (100vw - 25rem) / 31.25);
     }
 }
 }

@@ -1,9 +1,9 @@
-import { mediaPage, formVerification } from "../helpers/elementsNodeList"
+import { mediaPage, formVerification } from '../helpers/elementsNodeList'
 import mediaData from '../helpers/mediaData'
 
 const verification = () => {
   let filteredMedia = null
-  
+
   if (mediaPage) {
     const showVerificationPopupButtons = mediaPage.querySelectorAll('[data-type]')
 
@@ -14,23 +14,35 @@ const verification = () => {
     formVerification.addEventListener('submit', setVerefication)
   }
 
-  function addAudioNumberToPopup () {
+  function addAudioNumberToPopup() {
     filteredMedia = mediaData.audio.filter(({ id }) => id === this.dataset.audioId)[0]
     formVerification.setAttribute('data-id', filteredMedia.id)
 
-    console.log(filteredMedia);
+    console.log(filteredMedia)
   }
 
   function setVerefication(e) {
     e.preventDefault()
 
-    const inputPasswordValue = this.querySelector('input').value
+    const audioItem = mediaPage.querySelector(`[data-audio="${filteredMedia.name}"]`)
+    const lock = audioItem.querySelector('.accordion__lock')
+    const inputPassword = this.querySelector('input')
 
-    if (inputPasswordValue === filteredMedia.secure) {
-      console.log(inputPasswordValue, 'OK');
+    this.classList.remove('_error')
+    inputPassword.classList.remove('_error')
+
+    if (inputPassword.value === filteredMedia.secure) {
+      this.closest('.code-popup').classList.remove('_is-open')
+      audioItem.classList.add('_is-unlock')
+      lock.classList.add('_is-unlock')
+      console.log(inputPassword.value, 'OK')
     } else {
-      console.log(inputPasswordValue, 'ERROR');
+      this.classList.add('_error')
+      inputPassword.classList.add('_error')
+      console.log(inputPassword.value, 'ERROR')
     }
+
+    this.reset()
   }
 }
 

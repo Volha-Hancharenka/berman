@@ -20,6 +20,11 @@ const mediaData = {
       name: 'for-couples',
       secure: 'couple',
     },
+    {
+      id: '5',
+      name: 'meditate',
+      secure: 'relax',
+    },
   ]
 }
 

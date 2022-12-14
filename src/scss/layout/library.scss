@@ -21,14 +21,11 @@
   position: relative;
   padding-bottom: rem(60);
   @include adaptiveClamp("padding-bottom", 60, 30, 767, 425, 1);
-  // @include adaptiveClamp("padding-bottom", 60, 30, 900, 425, 1);
-
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   &__title {
     position: relative;
     text-align: center;
@@ -40,18 +37,14 @@
   &__block {
     width: 100%;
     max-width: 630px;
-    padding: 60px;
     border-radius: 20px;
     background: rgba(111, 143, 180, 0.361);
     box-shadow: 0 0 3px 0 rgba(#000, 18%), 0 0 5px 0 rgba(#000, 18%), 0 0 10px 0 rgba(#000, 18%),
       0 0 20px 0 rgba(#000, 18%);
-    @include adaptiveClamp("padding-top", 60, 30, 900, 425, 1);
-    @include adaptiveClamp("padding-bottom", 60, 30, 900, 425, 1);
-    @include adaptiveClamp("padding-left", 60, 30, 900, 425, 1);
-    @include adaptiveClamp("padding-right", 60, 30, 900, 425, 1);
-    @include media(400) {
-      padding: 15px;
-    }
+    @include adaptiveClamp("padding-top", 60, 15, 900, 400, 1);
+    @include adaptiveClamp("padding-bottom", 60, 15, 900, 400, 1);
+    @include adaptiveClamp("padding-left", 60, 15, 900, 400, 1);
+    @include adaptiveClamp("padding-right", 60, 15, 900, 400, 1);
   }
   &__item {
     border-radius: 10px;
@@ -85,6 +78,7 @@
     }
     @include media(350) {
       padding-left: 10px;
+      padding-right: 10px;
     }
   }
   &__text-title {

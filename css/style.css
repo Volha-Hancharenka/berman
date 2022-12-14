@@ -2550,33 +2550,18 @@ body.lock {
 }
 
 .meditation__video {
-  /*position: relative;
-  width: 100%;
-  padding-bottom: prc(250, 600);
-  overflow: hidden;
-  box-shadow: $blockBoxShadow;
-  @include media(1000) {
-    padding-bottom: 70%;
-  }
-  img {
-    object-position: bottom;
-  }*/
-}
-
-.meditation__item {
-  max-width: 600px;
-  width: 100%;
   position: relative;
+  padding-bottom: 56.3%;
 }
 
-.meditation__item video {
+.meditation__video iframe {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .meditation__description {
@@ -4631,10 +4616,6 @@ body.lock {
     grid-template-columns: 1fr;
     -ms-grid-row-align: center;
         align-self: center;
-  }
-
-  .meditation__item {
-    max-width: 100%;
   }
 }
 

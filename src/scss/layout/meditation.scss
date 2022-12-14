@@ -48,33 +48,17 @@
   }
 
   &__video {
-    /*position: relative;
-    width: 100%;
-    padding-bottom: prc(250, 600);
-    overflow: hidden;
-    box-shadow: $blockBoxShadow;
-    @include media(1000) {
-      padding-bottom: 70%;
-    }
-    img {
-      object-position: bottom;
-    }*/
-  }
-  &__item {
-    max-width: 600px;
-    width: 100%;
-    position: relative;
-    @include media(900) {
-      max-width: 100%;
-    }
-    // padding-bottom: 20%;
-    video {
+  //aspect-ratio: 16/9;
+  position: relative;
+  padding-bottom: 56.3%;
+   
+    iframe {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      top:0;
+      left:0;
       object-fit: cover;
+     width: 100%;
+     height: 100%;
     }
   }
   &__description {

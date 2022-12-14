@@ -18,10 +18,14 @@
           </h2>
           <div class="meditation__content content">
             <div class="meditation__video">
-              <video muted preload="auto" poster="./files/video/image-header.jpg" controls class="meditation__item">
+              <iframe src="https://www.youtube.com/embed/v7eG86KlOHQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <!--<video muted preload="auto" poster="./files/video/image-header.jpg" controls class="meditation__item">
                 <source src="./files/video/first-video.webm" type="video/webm" alt="Видео о медитации">
                 <source src="./files/video/first-video.mp4" type="video/mp4" alt="Видео о медитации">
-              </video>
+              </video>-->
             </div>
             <div class="meditation__text text">
               <div class="meditation__articles articles">
@@ -348,31 +352,17 @@
                 <input type="text" name="user_name" class="test__input-control _req" placeholder="Ваше имя*">
               </div>
               <div class="test__field-control">
-                <textarea 
-                    name="problems" 
-                    class="test__textarea-control"
-                    placeholder="Расскажите о своей задаче и способах ее решения в прошлом" 
-                    type="text"
-                    rows="3"
-                ></textarea>
+                <textarea name="problems" class="test__textarea-control"
+                  placeholder="Расскажите о своей задаче и способах ее решения в прошлом" type="text"
+                  rows="3"></textarea>
               </div>
               <div class="test__field-control">
-                <textarea 
-                    type="text" 
-                    name="emotions" 
-                    class="test__textarea-control"
-                    placeholder="Убеждения и эмоции, связанные с задачей"
-                    rows="3"
-                ></textarea>
+                <textarea type="text" name="emotions" class="test__textarea-control"
+                  placeholder="Убеждения и эмоции, связанные с задачей" rows="3"></textarea>
               </div>
               <div class="test__field-control">
-                <textarea 
-                    type="text" 
-                    name="cituations" 
-                    class="test__textarea-control"
-                    placeholder="Когда сложные ситуации решались сами собой, что общего между ними"
-                    rows="3"
-                ></textarea>
+                <textarea type="text" name="cituations" class="test__textarea-control"
+                  placeholder="Когда сложные ситуации решались сами собой, что общего между ними" rows="3"></textarea>
               </div>
               <div class="test__field-control">
                 <input type="tel" name="user_phone" class="test__input-control _req" placeholder="Ваш номер телефона*">

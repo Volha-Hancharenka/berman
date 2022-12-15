@@ -1,6 +1,6 @@
 <?php
   $token          = "5932511387:AAGDS1JojBr3fUwi3mcubhBeFGNtPQ3e6Jw";
-  $chat_id        = "-678847938";
+  $chat_id        = "-1001722135149";
 
   $name           = $_POST['user_name'];
   $phone          = $_POST['user_phone'];
@@ -10,12 +10,12 @@
   $cituations     = $_POST['cituations'];
 
   $arr = array(
-    'Имя: ' => $name,
-    'Телефон: ' => $phone,
-    'E-mail: ' => $email,
-    'Проблема клиента: ' => $problems,
-    'Эмоции клиента: ' => $emotions,
-    'Ситуация клиента: ' => $cituations,
+    'Имя:' => $name,
+    'Телефон:' => $phone,
+    'E-mail:' => $email,
+    'Проблема клиента:' => $problems,
+    'Эмоции клиента:' => $emotions,
+    'Ситуация клиента:' => $cituations,
   );
 
   foreach($arr as $key => $value) {
@@ -30,7 +30,6 @@
   } else {
     $message = "Error";
     $status = 500;
-    throw new Exception();
   }
 
   header('Content-Type: application/json');

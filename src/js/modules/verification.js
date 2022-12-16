@@ -1,4 +1,5 @@
 import { mediaPage, formVerification } from '../helpers/elementsNodeList'
+import { toggleBodyLock } from '../helpers/toggleBodyLock'
 import mediaData from '../helpers/mediaData'
 
 const verification = () => {
@@ -36,6 +37,7 @@ const verification = () => {
       audioItem.classList.add('_is-unlock')
       lock.classList.add('_is-unlock')
       console.log(inputPassword.value, 'OK')
+      toggleBodyLock(false)
     } else {
       this.classList.add('_error')
       inputPassword.classList.add('_error')

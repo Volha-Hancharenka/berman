@@ -48,11 +48,11 @@
   }
 
   &__video {
-  //aspect-ratio: 16/9;
+ 
   position: relative;
   padding-bottom: 56.3%;
    
-    iframe {
+    video {
       position: absolute;
       top:0;
       left:0;

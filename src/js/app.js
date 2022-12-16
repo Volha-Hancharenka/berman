@@ -1,4 +1,4 @@
-import { isWebp, headerFixed, toggleBurgerMenu }from './modules'
+import { isWebp, headerFixed, toggleBurgerMenu } from './modules'
 import { togglePopupWindows } from './modules/togglePopupWindows'
 import { sliderTestimonials } from './modules/sliderTestimonials'
 import { testimonialsPopup } from './modules/testimonialsPopup'

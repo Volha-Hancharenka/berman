@@ -1,7 +1,7 @@
 {
-  "name": "bermancouch",   
+  "name": "bermancouch",
   "version": "1.0.0",
-  "description": "лендинг",  
+  "description": "лендинг",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
